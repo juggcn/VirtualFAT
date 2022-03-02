@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "virtualflash.h": "c",
+        "virtualfat.h": "c"
+    }
+}

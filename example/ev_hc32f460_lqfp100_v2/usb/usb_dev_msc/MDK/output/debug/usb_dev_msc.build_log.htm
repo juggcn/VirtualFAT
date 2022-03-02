@@ -1,0 +1,64 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: juggcn 990203955@qq.com, juggcn, LIC=GMZI6-D5UBL-ARLXW-QWAT1-L82HF-D1FIC
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.4.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TARMCM1.DLL V1.14.4.0
+ 
+<h2>Project:</h2>
+C:\Users\99020\Desktop\Boot\example\ev_hc32f460_lqfp100_v2\usb\usb_dev_msc\MDK\usb_dev_msc.uvprojx
+Project File Date:  03/02/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'usb_dev_msc_Debug'
+compiling VirtualFAT.c...
+..\VirtualFAT\VirtualFlash.h(19): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\VirtualFAT\VirtualFAT.c(319): warning:  #191-D: type qualifier is meaningless on cast type
+  		UpdateFAT12ClusterChain(FLASHFileStartCluster, (const uint8_t)FILE_CLUSTERS(FLASH_FILE_SIZE_BYTES));
+..\VirtualFAT\VirtualFAT.c: 2 warnings, 0 errors
+linking...
+Program Size: Code=24710 RO-data=862 RW-data=432 ZI-data=22872  
+".\output\debug\usb_dev_msc.axf" - 0 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.8.0.pack
+                ARM.CMSIS.5.8.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.5.0
+
+Package Vendor: HDSC
+                https://raw.githubusercontent.com/hdscmcu/pack/master/HDSC.HC32F460.1.0.8.pack
+                HDSC.HC32F460.1.0.8
+                HC32F460 ARM Cortex-M4 Device Family Pack
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_usb_dev_msc_Debug
+  C:\Users\99020\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include
+  C:\Users\99020\AppData\Local\Arm\Packs\HDSC\HC32F460\1.0.8\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.5.0
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>
