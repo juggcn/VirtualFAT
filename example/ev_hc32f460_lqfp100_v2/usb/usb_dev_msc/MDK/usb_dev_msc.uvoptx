@@ -190,6 +190,11 @@
           <WinNumber>1</WinNumber>
           <ItemText>BlockBuffer</ItemText>
         </Ww>
+        <Ww>
+          <count>7</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>BlockBuffer1</ItemText>
+        </Ww>
       </WatchWindow1>
       <MemoryWindow1>
         <Mm>

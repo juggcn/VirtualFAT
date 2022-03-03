@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\output\debug\usb_dev_msc.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\output\debug\usb_dev_msc.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Wed Mar 02 17:05:27 2022
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Thu Mar 03 13:48:56 2022
 <BR><P>
 <H3>Maximum Stack Usage =        212 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1407,7 +1407,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[fe]"></a>VirtualFATWrite</STRONG> (Thumb, 48 bytes, Stack size 24 bytes, virtualfat.o(i.VirtualFATWrite))
-<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = VirtualFATWrite &rArr; VirtualFAT_WriteBlock &rArr; WriteFLASHFileBlock &rArr; VirtualFlashProgram &rArr; EFM_SingleProgram &rArr; EFM_ErasePgmCmd
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = VirtualFATWrite &rArr; VirtualFAT_WriteBlock &rArr; WriteFLASHFileBlock &rArr; VirtualFlashProgram &rArr; EFM_SingleProgram &rArr; EFM_ErasePgmCmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 <LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFAT_WriteBlock
@@ -1415,7 +1415,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_write
 </UL>
 
-<P><STRONG><a name="[fd]"></a>VirtualFAT_ReadBlock</STRONG> (Thumb, 122 bytes, Stack size 16 bytes, virtualfat.o(i.VirtualFAT_ReadBlock))
+<P><STRONG><a name="[fd]"></a>VirtualFAT_ReadBlock</STRONG> (Thumb, 128 bytes, Stack size 16 bytes, virtualfat.o(i.VirtualFAT_ReadBlock))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = VirtualFAT_ReadBlock &rArr; UpdateFAT12ClusterChain &rArr; UpdateFAT12ClusterEntry
 </UL>
 <BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
@@ -1427,8 +1427,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFATRead
 </UL>
 
-<P><STRONG><a name="[ff]"></a>VirtualFAT_WriteBlock</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, virtualfat.o(i.VirtualFAT_WriteBlock))
-<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = VirtualFAT_WriteBlock &rArr; WriteFLASHFileBlock &rArr; VirtualFlashProgram &rArr; EFM_SingleProgram &rArr; EFM_ErasePgmCmd
+<P><STRONG><a name="[ff]"></a>VirtualFAT_WriteBlock</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, virtualfat.o(i.VirtualFAT_WriteBlock))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = VirtualFAT_WriteBlock &rArr; WriteFLASHFileBlock &rArr; VirtualFlashProgram &rArr; EFM_SingleProgram &rArr; EFM_ErasePgmCmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
 <LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteFLASHFileBlock
@@ -2299,7 +2299,7 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> usb_dev_msc_msd.o(.data)
 </UL>
 <P><STRONG><a name="[c]"></a>msc_write</STRONG> (Thumb, 42 bytes, Stack size 24 bytes, usb_dev_msc_msd.o(i.msc_write))
-<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = msc_write &rArr; VirtualFATWrite &rArr; VirtualFAT_WriteBlock &rArr; WriteFLASHFileBlock &rArr; VirtualFlashProgram &rArr; EFM_SingleProgram &rArr; EFM_ErasePgmCmd
+<BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = msc_write &rArr; VirtualFATWrite &rArr; VirtualFAT_WriteBlock &rArr; WriteFLASHFileBlock &rArr; VirtualFlashProgram &rArr; EFM_SingleProgram &rArr; EFM_ErasePgmCmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFATWrite
 </UL>
@@ -2570,7 +2570,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_wrblanktxfifo
 </UL>
 
-<P><STRONG><a name="[f3]"></a>ReadFLASHFileBlock</STRONG> (Thumb, 66 bytes, Stack size 24 bytes, virtualfat.o(i.ReadFLASHFileBlock))
+<P><STRONG><a name="[f3]"></a>ReadFLASHFileBlock</STRONG> (Thumb, 70 bytes, Stack size 24 bytes, virtualfat.o(i.ReadFLASHFileBlock))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ReadFLASHFileBlock
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
@@ -2593,7 +2593,7 @@ Local Symbols
 <LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateFAT12ClusterChain
 </UL>
 
-<P><STRONG><a name="[100]"></a>WriteFLASHFileBlock</STRONG> (Thumb, 74 bytes, Stack size 24 bytes, virtualfat.o(i.WriteFLASHFileBlock))
+<P><STRONG><a name="[100]"></a>WriteFLASHFileBlock</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, virtualfat.o(i.WriteFLASHFileBlock))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = WriteFLASHFileBlock &rArr; VirtualFlashProgram &rArr; EFM_SingleProgram &rArr; EFM_ErasePgmCmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFlashProgram

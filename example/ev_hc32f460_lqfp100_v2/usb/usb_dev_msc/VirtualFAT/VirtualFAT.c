@@ -212,7 +212,10 @@ static void WriteFLASHFileBlock(const uint16_t BlockNumber)
 {
 	uint16_t FLASHFileStartCluster = FirmwareFileEntries[DISK_FILE_ENTRY_FLASH_MSDOS].MSDOS_File.StartingCluster;
 
-	// FLASHFileStartCluster = 2;
+	if (FLASHFileStartCluster < 2)
+	{
+		FLASHFileStartCluster = 2;
+	}
 
 	uint16_t FileStartBlock = DISK_BLOCK_DataStartBlock + (FLASHFileStartCluster - 2) * SECTOR_PER_CLUSTER;
 	uint16_t FileEndBlock = FileStartBlock + (FILE_SECTORS(FLASH_FILE_SIZE_BYTES) - 1);
@@ -242,7 +245,10 @@ static void ReadFLASHFileBlock(const uint16_t BlockNumber)
 {
 	uint16_t FLASHFileStartCluster = FirmwareFileEntries[DISK_FILE_ENTRY_FLASH_MSDOS].MSDOS_File.StartingCluster;
 
-	// FLASHFileStartCluster = 2;
+	if (FLASHFileStartCluster < 2)
+	{
+		FLASHFileStartCluster = 2;
+	}
 
 	uint16_t FileStartBlock = DISK_BLOCK_DataStartBlock + (FLASHFileStartCluster - 2) * SECTOR_PER_CLUSTER;
 	uint16_t FileEndBlock = FileStartBlock + (FILE_SECTORS(FLASH_FILE_SIZE_BYTES) - 1);
@@ -274,7 +280,18 @@ void VirtualFAT_WriteBlock(const uint16_t BlockNumber)
 
 	case DISK_BLOCK_RootFilesBlock:
 		/* Copy over the updated directory entries */
-		memcpy(FirmwareFileEntries, BlockBuffer, sizeof(FirmwareFileEntries));
+		// memcpy(FirmwareFileEntries, BlockBuffer, sizeof(FirmwareFileEntries));
+
+		for (uint8_t i = 0; i < BootBlock.RootDirectoryEntries; i++)
+		{
+			memcpy(&FirmwareFileEntries[DISK_FILE_ENTRY_FLASH_MSDOS].MSDOS_File, BlockBuffer + i * 32, 32);
+			if (FirmwareFileEntries[DISK_FILE_ENTRY_FLASH_MSDOS].MSDOS_File.Filename[0] != 0xE5 &&
+				FirmwareFileEntries[DISK_FILE_ENTRY_FLASH_MSDOS].MSDOS_File.StartingCluster >= 2)
+			{
+				break;
+			}
+		}
+
 		break;
 
 	default:
@@ -293,7 +310,10 @@ void VirtualFAT_ReadBlock(const uint16_t BlockNumber)
 {
 	uint16_t FLASHFileStartCluster = FirmwareFileEntries[DISK_FILE_ENTRY_FLASH_MSDOS].MSDOS_File.StartingCluster;
 
-	// FLASHFileStartCluster = 2;
+	if (FLASHFileStartCluster < 2)
+	{
+		FLASHFileStartCluster = 2;
+	}
 
 	memset(BlockBuffer, 0x00, SECTOR_SIZE_BYTES);
 

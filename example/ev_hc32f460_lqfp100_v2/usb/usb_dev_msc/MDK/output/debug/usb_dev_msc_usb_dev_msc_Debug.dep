@@ -128,7 +128,7 @@ I (..\..\..\..\..\usb_lib\device_core\usb_dev_def.h)(0x6215D05B)
 I (..\..\..\..\..\usb_lib\device_core\usb_dev_conf.h)(0x6215D05B)
 I (..\source\usb_dev_desc.h)(0x6215D05B)
 I (..\..\..\..\..\usb_lib\device_core\usb_dev_stdreq.h)(0x6215D05B)
-F (..\\source\usb_dev_msc_msd.c)(0x621EFDD4)(--c99 -c --cpu Cortex-M4 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\..\..\..\mcu\common -I ..\source -I ..\..\..\..\..\driver\inc -I ..\..\..\..\..\midware\w25qxx\inc -I ..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v2 -I ..\..\..\..\..\usb_lib\usb_core -I ..\..\..\..\..\usb_lib\device_core -I ..\..\..\..\..\usb_lib\device_class\msc -I ..\FAT32 -I ..\..\..\..\..\..\example\ev_hc32f460_lqfp100_v2\template\ILI9341 -I ..\App\Inc -I ..\VirtualFAT --diag_suppress=186,66-I.\RTE\_usb_dev_msc_Debug-IC:\Users\99020\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\99020\AppData\Local\Arm\Packs\HDSC\HC32F460\1.0.8\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_ -D__DEBUG -DHC32F460 -DUSE_DEVICE_DRIVER_LIB-o .\output\debug\usb_dev_msc_msd.o --omf_browse .\output\debug\usb_dev_msc_msd.crf --depend .\output\debug\usb_dev_msc_msd.d)
+F (..\\source\usb_dev_msc_msd.c)(0x622048C8)(--c99 -c --cpu Cortex-M4 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\..\..\..\mcu\common -I ..\source -I ..\..\..\..\..\driver\inc -I ..\..\..\..\..\midware\w25qxx\inc -I ..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v2 -I ..\..\..\..\..\usb_lib\usb_core -I ..\..\..\..\..\usb_lib\device_core -I ..\..\..\..\..\usb_lib\device_class\msc -I ..\FAT32 -I ..\..\..\..\..\..\example\ev_hc32f460_lqfp100_v2\template\ILI9341 -I ..\App\Inc -I ..\VirtualFAT --diag_suppress=186,66-I.\RTE\_usb_dev_msc_Debug-IC:\Users\99020\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\99020\AppData\Local\Arm\Packs\HDSC\HC32F460\1.0.8\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_ -D__DEBUG -DHC32F460 -DUSE_DEVICE_DRIVER_LIB-o .\output\debug\usb_dev_msc_msd.o --omf_browse .\output\debug\usb_dev_msc_msd.crf --depend .\output\debug\usb_dev_msc_msd.d)
 I (..\..\..\..\..\mcu\common\hc32_ddl.h)(0x6215D05B)
 I (..\..\..\..\..\mcu\common\hc32_common.h)(0x6215D05B)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
@@ -167,8 +167,8 @@ I (..\..\..\..\..\usb_lib\device_core\usb_dev_def.h)(0x6215D05B)
 I (..\..\..\..\..\usb_lib\device_core\usb_dev_conf.h)(0x6215D05B)
 I (..\..\..\..\..\usb_lib\device_class\msc\usb_dev_msc_mem.h)(0x6215D05B)
 I (..\FAT32\fat32.h)(0x6215D05A)
-I (..\VirtualFAT\VirtualFAT.h)(0x621F2CD0)
-I (..\VirtualFAT\VirtualFlash.h)(0x621EFE73)
+I (..\VirtualFAT\VirtualFAT.h)(0x62204E94)
+I (..\VirtualFAT\VirtualFlash.h)(0x6220529B)
 F (..\\source\usb_dev_user.c)(0x6215D05B)(--c99 -c --cpu Cortex-M4 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\..\..\..\mcu\common -I ..\source -I ..\..\..\..\..\driver\inc -I ..\..\..\..\..\midware\w25qxx\inc -I ..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v2 -I ..\..\..\..\..\usb_lib\usb_core -I ..\..\..\..\..\usb_lib\device_core -I ..\..\..\..\..\usb_lib\device_class\msc -I ..\FAT32 -I ..\..\..\..\..\..\example\ev_hc32f460_lqfp100_v2\template\ILI9341 -I ..\App\Inc -I ..\VirtualFAT --diag_suppress=186,66-I.\RTE\_usb_dev_msc_Debug-IC:\Users\99020\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\99020\AppData\Local\Arm\Packs\HDSC\HC32F460\1.0.8\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_ -D__DEBUG -DHC32F460 -DUSE_DEVICE_DRIVER_LIB-o .\output\debug\usb_dev_user.o --omf_browse .\output\debug\usb_dev_user.crf --depend .\output\debug\usb_dev_user.d)
 I (..\..\..\..\..\mcu\common\hc32_ddl.h)(0x6215D05B)
 I (..\..\..\..\..\mcu\common\hc32_common.h)(0x6215D05B)
@@ -830,12 +830,12 @@ I (..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v2\ev_hc32f460_lqfp100_v2.h)(0x6215D05
 I (..\FAT32\btldr_config.h)(0x6219CC3E)
 I (..\FAT32\fat32.h)(0x6215D05A)
 F (..\..\..\..\..\..\example\ev_hc32f460_lqfp100_v2\template\ILI9341\ILI9341.c)(0x00000000)(--c99 -c --cpu Cortex-M4 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\..\..\..\mcu\common -I ..\source -I ..\..\..\..\..\driver\inc -I ..\..\..\..\..\midware\w25qxx\inc -I ..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v2 -I ..\..\..\..\..\usb_lib\usb_core -I ..\..\..\..\..\usb_lib\device_core -I ..\..\..\..\..\usb_lib\device_class\msc -I ..\FAT32 -I ..\..\..\..\..\..\example\ev_hc32f460_lqfp100_v2\template\ILI9341 -I ..\App\Inc -I ..\VirtualFAT --diag_suppress=186,66-I.\RTE\_usb_dev_msc_Debug-IC:\Users\99020\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\99020\AppData\Local\Arm\Packs\HDSC\HC32F460\1.0.8\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_ -D__DEBUG -DHC32F460 -DUSE_DEVICE_DRIVER_LIB-o .\output\debug\ili9341.o --omf_browse .\output\debug\ili9341.crf --depend .\output\debug\ili9341.d)
-F (..\VirtualFAT\VirtualFAT.c)(0x621F3353)(--c99 -c --cpu Cortex-M4 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\..\..\..\mcu\common -I ..\source -I ..\..\..\..\..\driver\inc -I ..\..\..\..\..\midware\w25qxx\inc -I ..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v2 -I ..\..\..\..\..\usb_lib\usb_core -I ..\..\..\..\..\usb_lib\device_core -I ..\..\..\..\..\usb_lib\device_class\msc -I ..\FAT32 -I ..\..\..\..\..\..\example\ev_hc32f460_lqfp100_v2\template\ILI9341 -I ..\App\Inc -I ..\VirtualFAT --diag_suppress=186,66-I.\RTE\_usb_dev_msc_Debug-IC:\Users\99020\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\99020\AppData\Local\Arm\Packs\HDSC\HC32F460\1.0.8\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_ -D__DEBUG -DHC32F460 -DUSE_DEVICE_DRIVER_LIB-o .\output\debug\virtualfat.o --omf_browse .\output\debug\virtualfat.crf --depend .\output\debug\virtualfat.d)
-I (..\VirtualFAT\VirtualFAT.h)(0x621F2CD0)
+F (..\VirtualFAT\VirtualFAT.c)(0x622056C5)(--c99 -c --cpu Cortex-M4 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\..\..\..\mcu\common -I ..\source -I ..\..\..\..\..\driver\inc -I ..\..\..\..\..\midware\w25qxx\inc -I ..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v2 -I ..\..\..\..\..\usb_lib\usb_core -I ..\..\..\..\..\usb_lib\device_core -I ..\..\..\..\..\usb_lib\device_class\msc -I ..\FAT32 -I ..\..\..\..\..\..\example\ev_hc32f460_lqfp100_v2\template\ILI9341 -I ..\App\Inc -I ..\VirtualFAT --diag_suppress=186,66-I.\RTE\_usb_dev_msc_Debug-IC:\Users\99020\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\99020\AppData\Local\Arm\Packs\HDSC\HC32F460\1.0.8\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_ -D__DEBUG -DHC32F460 -DUSE_DEVICE_DRIVER_LIB-o .\output\debug\virtualfat.o --omf_browse .\output\debug\virtualfat.crf --depend .\output\debug\virtualfat.d)
+I (..\VirtualFAT\VirtualFAT.h)(0x62204E94)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
-I (..\VirtualFAT\VirtualFlash.h)(0x621EFE73)
+I (..\VirtualFAT\VirtualFlash.h)(0x6220529B)
 I (..\..\..\..\..\mcu\common\hc32_ddl.h)(0x6215D05B)
 I (..\..\..\..\..\mcu\common\hc32_common.h)(0x6215D05B)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
@@ -861,7 +861,7 @@ I (..\..\..\..\..\driver\inc\hc32f460_usart.h)(0x6215D05A)
 I (..\..\..\..\..\driver\inc\hc32f460_utility.h)(0x6215D05A)
 I (..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v2\ev_hc32f460_lqfp100_v2.h)(0x6215D05A)
 F (..\VirtualFAT\VirtualFlash.c)(0x621F0117)(--c99 -c --cpu Cortex-M4 -D__MICROLIB --li -g -O0 --apcs=interwork --split_sections -I ..\..\..\..\..\mcu\common -I ..\source -I ..\..\..\..\..\driver\inc -I ..\..\..\..\..\midware\w25qxx\inc -I ..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v2 -I ..\..\..\..\..\usb_lib\usb_core -I ..\..\..\..\..\usb_lib\device_core -I ..\..\..\..\..\usb_lib\device_class\msc -I ..\FAT32 -I ..\..\..\..\..\..\example\ev_hc32f460_lqfp100_v2\template\ILI9341 -I ..\App\Inc -I ..\VirtualFAT --diag_suppress=186,66-I.\RTE\_usb_dev_msc_Debug-IC:\Users\99020\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\99020\AppData\Local\Arm\Packs\HDSC\HC32F460\1.0.8\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -D_RTE_ -D__DEBUG -DHC32F460 -DUSE_DEVICE_DRIVER_LIB-o .\output\debug\virtualflash.o --omf_browse .\output\debug\virtualflash.crf --depend .\output\debug\virtualflash.d)
-I (..\VirtualFAT\VirtualFlash.h)(0x621EFE73)
+I (..\VirtualFAT\VirtualFlash.h)(0x6220529B)
 I (..\..\..\..\..\mcu\common\hc32_ddl.h)(0x6215D05B)
 I (..\..\..\..\..\mcu\common\hc32_common.h)(0x6215D05B)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
