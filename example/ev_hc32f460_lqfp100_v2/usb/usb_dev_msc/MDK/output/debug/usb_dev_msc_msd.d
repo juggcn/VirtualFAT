@@ -39,3 +39,7 @@
 .\output\debug\usb_dev_msc_msd.o: ..\FAT32\fat32.h
 .\output\debug\usb_dev_msc_msd.o: ..\VirtualFAT\VirtualFAT.h
 .\output\debug\usb_dev_msc_msd.o: ..\VirtualFAT\VirtualFlash.h
+.\output\debug\usb_dev_msc_msd.o: ..\uf2\uf2.h
+.\output\debug\usb_dev_msc_msd.o: ..\uf2\hw_config.h
+.\output\debug\usb_dev_msc_msd.o: ..\uf2\board.h
+.\output\debug\usb_dev_msc_msd.o: ..\uf2\uf2cfg.h

@@ -187,6 +187,7 @@ int8_t msc_ifwrprotected(uint8_t lun)
 }
 
 #include "VirtualFAT.h"
+#include "uf2.h"
 
 /**
  *******************************************************************************
@@ -212,7 +213,12 @@ int8_t msc_read(uint8_t lun, uint8_t *buf, uint32_t blk_addr, uint16_t blk_len)
     //     memcpy(buf + (i * sizeof(BlockBuffer)), BlockBuffer, sizeof(BlockBuffer));
     // }
 
-    VirtualFATRead(buf, blk_addr, blk_len);
+//    VirtualFATRead(buf, blk_addr, blk_len);
+	 for (uint16_t i = 0; i < blk_len; i++)
+	{
+		read_block(blk_addr + i, buf + (i * 512));
+	}
+	  
 
     return res;
 }
@@ -241,7 +247,12 @@ int8_t msc_write(uint8_t lun, uint8_t *buf, uint32_t blk_addr, uint16_t blk_len)
     //     VirtualFAT_WriteBlock(blk_addr + i);
     // }
 
-    VirtualFATWrite(buf, blk_addr, blk_len);
+//    VirtualFATWrite(buf, blk_addr, blk_len);
+	   for (uint16_t i = 0; i < blk_len; i++)
+	{
+		write_block(blk_addr + i, buf + (i * 512));
+	}
+	  
 
     return res;
 }
