@@ -36,6 +36,4 @@
 .\output\debug\usb_dev_msc_msd.o: ..\..\..\..\..\usb_lib\device_core\usb_dev_def.h
 .\output\debug\usb_dev_msc_msd.o: ..\..\..\..\..\usb_lib\device_core\usb_dev_conf.h
 .\output\debug\usb_dev_msc_msd.o: ..\..\..\..\..\usb_lib\device_class\msc\usb_dev_msc_mem.h
-.\output\debug\usb_dev_msc_msd.o: ..\FAT32\fat32.h
-.\output\debug\usb_dev_msc_msd.o: ..\VirtualFAT\VirtualFAT.h
-.\output\debug\usb_dev_msc_msd.o: ..\VirtualFAT\VirtualFlash.h
+.\output\debug\usb_dev_msc_msd.o: ..\Fat16\fat16.h

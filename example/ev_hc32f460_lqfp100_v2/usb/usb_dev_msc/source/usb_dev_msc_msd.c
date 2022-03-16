@@ -27,7 +27,7 @@
 #include "usb_app_conf.h"
 //#include "w25qxx.h"
 //#include "FAT16.h"
-#include "fat32.h"
+#include "fat16.h"
 
 int8_t msc_init(uint8_t lun);
 int8_t msc_getcapacity(uint8_t lun, uint32_t *block_num, uint32_t *block_size);
@@ -112,28 +112,28 @@ USB_DEV_MSC_cbk_TypeDef *msc_fops = &flash_fops;
 
 static void _STORAGE_ReadBlocks(uint32_t *buf, uint64_t readAddr, uint32_t blockSize, uint32_t numOfBlocks)
 {
-    uint32_t iBlock;
-    uint8_t *buf8 = (uint8_t *)buf;
+//    uint32_t iBlock;
+//    uint8_t *buf8 = (uint8_t *)buf;
 
-    for (iBlock = 0; iBlock < numOfBlocks; iBlock++)
-    {
-        fat32_read(buf8, (uint32_t)readAddr);
-        readAddr += blockSize;
-        buf8 += blockSize;
-    }
+//    for (iBlock = 0; iBlock < numOfBlocks; iBlock++)
+//    {
+//        fat32_read(buf8, (uint32_t)readAddr);
+//        readAddr += blockSize;
+//        buf8 += blockSize;
+//    }
 }
 
 static void _STORAGE_WriteBlocks(uint32_t *buf, uint64_t writeAddr, uint32_t blockSize, uint32_t numOfBlocks)
 {
-    uint32_t iBlock;
-    uint8_t *buf8 = (uint8_t *)buf;
+//    uint32_t iBlock;
+//    uint8_t *buf8 = (uint8_t *)buf;
 
-    for (iBlock = 0; iBlock < numOfBlocks; iBlock++)
-    {
-        fat32_write(buf8, (uint32_t)writeAddr);
-        writeAddr += blockSize;
-        buf8 += blockSize;
-    }
+//    for (iBlock = 0; iBlock < numOfBlocks; iBlock++)
+//    {
+//        fat32_write(buf8, (uint32_t)writeAddr);
+//        writeAddr += blockSize;
+//        buf8 += blockSize;
+//    }
 }
 
 /**
@@ -186,7 +186,7 @@ int8_t msc_ifwrprotected(uint8_t lun)
     return Ok;
 }
 
-#include "VirtualFAT.h"
+//#include "VirtualFAT.h"
 
 /**
  *******************************************************************************
@@ -212,7 +212,15 @@ int8_t msc_read(uint8_t lun, uint8_t *buf, uint32_t blk_addr, uint16_t blk_len)
     //     memcpy(buf + (i * sizeof(BlockBuffer)), BlockBuffer, sizeof(BlockBuffer));
     // }
 
-    VirtualFATRead(buf, blk_addr, blk_len);
+//    VirtualFATRead(buf, blk_addr, blk_len);
+	
+//	  for(uint16_t i=0;i<blk_len;i++)
+//	{
+//		FATReadLBA((blk_addr + i)* 512u, buf, 512u);
+//		buf += 512u;
+//	}
+	
+	  FATReadLBA(blk_addr * 512u, buf, blk_len * 512u);
 
     return res;
 }
@@ -241,7 +249,17 @@ int8_t msc_write(uint8_t lun, uint8_t *buf, uint32_t blk_addr, uint16_t blk_len)
     //     VirtualFAT_WriteBlock(blk_addr + i);
     // }
 
-    VirtualFATWrite(buf, blk_addr, blk_len);
+//    VirtualFATWrite(buf, blk_addr, blk_len);
+	
+//	  FATWriteLBA(blk_addr * 512u, buf, blk_len * 512u);
+	
+//	  for(uint16_t i=0;i<blk_len;i++)
+//	{
+//		FATWriteLBA((blk_addr + i)* 512u, buf, 512u);
+//		buf += 512u;
+//	}
+
+    FATWriteLBA(blk_addr * 512u, buf, blk_len * 512u);
 
     return res;
 }

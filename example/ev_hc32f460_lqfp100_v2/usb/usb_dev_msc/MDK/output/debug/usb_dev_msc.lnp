@@ -29,9 +29,8 @@
 ".\output\debug\usb_dev_msc_class.o"
 ".\output\debug\usb_dev_msc_data.o"
 ".\output\debug\usb_dev_msc_scsi.o"
-".\output\debug\fat32.o"
-".\output\debug\virtualfat.o"
-".\output\debug\virtualflash.o"
+".\output\debug\fat16.o"
+".\output\debug\flash.o"
 --library_type=microlib --strict --scatter ".\output\debug\usb_dev_msc.sct"
 --keep=*Handler --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

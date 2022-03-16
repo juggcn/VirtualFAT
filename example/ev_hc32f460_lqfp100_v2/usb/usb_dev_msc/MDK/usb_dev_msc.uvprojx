@@ -339,7 +339,7 @@
               <MiscControls>--diag_suppress=186,66</MiscControls>
               <Define>__DEBUG,HC32F460,USE_DEVICE_DRIVER_LIB</Define>
               <Undefine></Undefine>
-              <IncludePath>..\..\..\..\..\mcu\common;..\source;..\..\..\..\..\driver\inc;..\..\..\..\..\midware\w25qxx\inc;..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v2;..\..\..\..\..\usb_lib\usb_core;..\..\..\..\..\usb_lib\device_core;..\..\..\..\..\usb_lib\device_class\msc;..\FAT32;..\..\..\..\..\..\example\ev_hc32f460_lqfp100_v2\template\ILI9341;..\App\Inc;..\VirtualFAT</IncludePath>
+              <IncludePath>..\..\..\..\..\mcu\common;..\source;..\..\..\..\..\driver\inc;..\..\..\..\..\midware\w25qxx\inc;..\..\..\..\..\bsp\ev_hc32f460_lqfp100_v2;..\..\..\..\..\usb_lib\usb_core;..\..\..\..\..\usb_lib\device_core;..\..\..\..\..\usb_lib\device_class\msc;..\FAT32;..\..\..\..\..\..\example\ev_hc32f460_lqfp100_v2\template\ILI9341;..\App\Inc;..\VirtualFAT;..\Fat16</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -729,16 +729,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>FAT32</GroupName>
-          <Files>
-            <File>
-              <FileName>fat32.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FAT32\fat32.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>ILI9341</GroupName>
           <GroupOption>
             <CommonProperty>
@@ -818,17 +808,17 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>VirtualFAT</GroupName>
+          <GroupName>Fat16</GroupName>
           <Files>
             <File>
-              <FileName>VirtualFAT.c</FileName>
+              <FileName>FAT16.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\VirtualFAT\VirtualFAT.c</FilePath>
+              <FilePath>..\Fat16\FAT16.c</FilePath>
             </File>
             <File>
-              <FileName>VirtualFlash.c</FileName>
+              <FileName>Flash.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\VirtualFAT\VirtualFlash.c</FilePath>
+              <FilePath>..\Fat16\Flash.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1422,16 +1412,6 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>FAT32</GroupName>
-          <Files>
-            <File>
-              <FileName>fat32.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\FAT32\fat32.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
           <GroupName>ILI9341</GroupName>
           <Files>
             <File>
@@ -1442,17 +1422,17 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>VirtualFAT</GroupName>
+          <GroupName>Fat16</GroupName>
           <Files>
             <File>
-              <FileName>VirtualFAT.c</FileName>
+              <FileName>FAT16.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\VirtualFAT\VirtualFAT.c</FilePath>
+              <FilePath>..\Fat16\FAT16.c</FilePath>
             </File>
             <File>
-              <FileName>VirtualFlash.c</FileName>
+              <FileName>Flash.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\VirtualFAT\VirtualFlash.c</FilePath>
+              <FilePath>..\Fat16\Flash.c</FilePath>
             </File>
           </Files>
         </Group>

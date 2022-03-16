@@ -39,5 +39,5 @@
 .\output\debug\main.o: ..\source\usb_bsp.h
 .\output\debug\main.o: ..\..\..\..\..\usb_lib\device_class\msc\usb_dev_msc_class.h
 .\output\debug\main.o: ..\..\..\..\..\usb_lib\device_core\usb_dev_ctrleptrans.h
-.\output\debug\main.o: ..\FAT32\fat32.h
+.\output\debug\main.o: ..\Fat16\fat16.h
 .\output\debug\main.o: ..\App\Inc\includes.h

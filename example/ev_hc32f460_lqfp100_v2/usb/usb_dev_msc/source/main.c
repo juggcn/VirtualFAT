@@ -24,7 +24,7 @@
 #include "usb_bsp.h"
 #include "usb_dev_msc_class.h"
 
-#include "fat32.h"
+#include "fat16.h"
 #include "includes.h"
 
 #define USB_RENUMN_PORT (PortC)

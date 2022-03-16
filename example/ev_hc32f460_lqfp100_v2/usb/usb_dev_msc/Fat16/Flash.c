@@ -1,6 +1,6 @@
-#include "VirtualFlash.h"
+#include "Flash.h"
 
-void VirtualFlashErase(uint32_t addr)
+void vFlashErase(uint32_t addr)
 {
     if (addr >= APP_START_ADDRESS &&
         addr < FLASH_SIZE)
@@ -18,7 +18,7 @@ void VirtualFlashErase(uint32_t addr)
     }
 }
 
-void VirtualFlashProgram(uint32_t addr, uint8_t *buf, uint16_t len)
+void vFlashProgram(uint32_t addr, uint8_t *buf, uint16_t len)
 {
     if (addr >= APP_START_ADDRESS &&
         addr < FLASH_SIZE)
@@ -37,3 +37,5 @@ void VirtualFlashProgram(uint32_t addr, uint8_t *buf, uint16_t len)
         EFM_Lock();
     }
 }
+
+
