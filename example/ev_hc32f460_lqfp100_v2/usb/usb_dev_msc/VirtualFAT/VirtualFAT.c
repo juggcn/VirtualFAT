@@ -138,13 +138,6 @@ static FATDirectoryEntry_t FirmwareFileEntries[] =
 					}},
 };
 
-/** Starting cluster of the virtual FLASH.BIN file on disk, tracked so that the
- *  offset from the start of the data sector can be determined. On Windows
- *  systems files are usually replaced using the original file's disk clusters,
- *  while Linux appears to overwrite with an offset which must be compensated for.
- */
-// static const uint16_t* FLASHFileStartCluster  = &FirmwareFileEntries[DISK_FILE_ENTRY_FLASH_MSDOS].MSDOS_File.StartingCluster;
-
 /** Updates a FAT12 cluster entry in the FAT file table with the specified next
  *  chain index. If the cluster is the last in the file chain, the magic value
  *  \c 0xFFF should be used.
@@ -201,14 +194,17 @@ static void UpdateFAT12ClusterChain(const uint16_t Index,
 	}
 }
 
-/** Rrites a block of data to the physical device FLASH using a
+/** Reads or writes a block of data from/to the physical device FLASH using a
  *  block buffer stored in RAM, if the requested block is within the virtual
  *  firmware file's sector ranges in the emulated FAT file system.
  *
  *  \param[in]      BlockNumber  Physical disk block to read from/write to
  *  \param[in,out]  BlockBuffer  Pointer to the start of the block buffer in RAM
+ *  \param[in]      Read         If \c true, the requested block is read, if
+ *                               \c false, the requested block is written
  */
-static void WriteFLASHFileBlock(const uint16_t BlockNumber)
+static void ReadWriteFLASHFileBlock(const uint16_t BlockNumber,
+									const bool Read)
 {
 	uint16_t FLASHFileStartCluster = FirmwareFileEntries[DISK_FILE_ENTRY_FLASH_MSDOS].MSDOS_File.StartingCluster;
 
@@ -225,42 +221,22 @@ static void WriteFLASHFileBlock(const uint16_t BlockNumber)
 	if (!((BlockNumber >= FileStartBlock) && (BlockNumber <= FileEndBlock)))
 		return;
 
-	uint32_t FlashAddress = (BlockNumber - FileStartBlock) * SECTOR_SIZE_BYTES + APP_START_ADDRESS;
+#if (FLASH_SIZE > 0xFFFF)
+	uint32_t FlashAddress = (uint32_t)(BlockNumber - FileStartBlock) * SECTOR_SIZE_BYTES + APP_START_ADDRESS;
+#else
+	uint16_t FlashAddress = (uint16_t)(BlockNumber - FileStartBlock) * SECTOR_SIZE_BYTES + APP_START_ADDRESS;
+#endif
 
-	//	flash_erase(FlashAddress, SECTOR_SIZE_BYTES);
-	//	flash_write_to((uint32_t *)FlashAddress, (uint32_t *)BlockBuffer, SECTOR_SIZE_BYTES);
-
-	VirtualFlashErase(FlashAddress);
-	VirtualFlashProgram(FlashAddress, BlockBuffer, sizeof(BlockBuffer));
-}
-
-/** Reads a block of data from the physical device FLASH using a
- *  block buffer stored in RAM, if the requested block is within the virtual
- *  firmware file's sector ranges in the emulated FAT file system.
- *
- *  \param[in]      BlockNumber  Physical disk block to read from/write to
- *  \param[in,out]  BlockBuffer  Pointer to the start of the block buffer in RAM
- */
-static void ReadFLASHFileBlock(const uint16_t BlockNumber)
-{
-	uint16_t FLASHFileStartCluster = FirmwareFileEntries[DISK_FILE_ENTRY_FLASH_MSDOS].MSDOS_File.StartingCluster;
-
-	if (FLASHFileStartCluster < 2)
+	if (Read)
 	{
-		FLASHFileStartCluster = 2;
+		/* Read out the mapped block of data from the device's FLASH */
+		memcpy(BlockBuffer, (uint32_t *)FlashAddress, SECTOR_SIZE_BYTES);
 	}
-
-	uint16_t FileStartBlock = DISK_BLOCK_DataStartBlock + (FLASHFileStartCluster - 2) * SECTOR_PER_CLUSTER;
-	uint16_t FileEndBlock = FileStartBlock + (FILE_SECTORS(FLASH_FILE_SIZE_BYTES) - 1);
-
-	/* Range check the write request - abort if requested block is not within the
-	 * virtual firmware file sector range */
-	if (!((BlockNumber >= FileStartBlock) && (BlockNumber <= FileEndBlock)))
-		return;
-
-	uint32_t FlashAddress = (BlockNumber - FileStartBlock) * SECTOR_SIZE_BYTES + APP_START_ADDRESS;
-
-	memcpy(BlockBuffer, (uint32_t *)FlashAddress, SECTOR_SIZE_BYTES);
+	else
+	{
+		VirtualFlashErase(FlashAddress);
+		VirtualFlashProgram(FlashAddress, BlockBuffer, sizeof(BlockBuffer));
+	}
 }
 
 /** Writes a block of data to the virtual FAT filesystem, from the USB Mass
@@ -295,8 +271,8 @@ void VirtualFAT_WriteBlock(const uint16_t BlockNumber)
 		break;
 
 	default:
-		// ReadWriteFLASHFileBlock(BlockNumber, false);
-		WriteFLASHFileBlock(BlockNumber);
+		ReadWriteFLASHFileBlock(BlockNumber, false);
+
 		break;
 	}
 }
@@ -345,8 +321,8 @@ void VirtualFAT_ReadBlock(const uint16_t BlockNumber)
 		break;
 
 	default:
-		// ReadWriteFLASHFileBlock(BlockNumber, true);
-		ReadFLASHFileBlock(BlockNumber);
+		ReadWriteFLASHFileBlock(BlockNumber, true);
+
 		break;
 	}
 }

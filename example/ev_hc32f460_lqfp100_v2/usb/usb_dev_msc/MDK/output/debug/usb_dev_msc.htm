@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\output\debug\usb_dev_msc.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\output\debug\usb_dev_msc.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Thu Mar 03 13:48:56 2022
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Fri Jul 28 09:46:52 2023
 <BR><P>
 <H3>Maximum Stack Usage =        212 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -220,7 +220,7 @@ Global Symbols
 <P><STRONG><a name="[c1]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
 <BR>[Address Reference Count : 1]<UL><LI> startup_hc32f460.o(.text)
 </UL>
-<P><STRONG><a name="[163]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+<P><STRONG><a name="[162]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
 
 <P><STRONG><a name="[c6]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
 <BR><BR>[Calls]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
@@ -230,17 +230,17 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
 </UL>
 
-<P><STRONG><a name="[164]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
+<P><STRONG><a name="[163]"></a>_main_clock</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7b.o(.ARM.Collect$$$$00000008))
 
-<P><STRONG><a name="[165]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
+<P><STRONG><a name="[164]"></a>_main_cpp_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry8b.o(.ARM.Collect$$$$0000000A))
 
-<P><STRONG><a name="[166]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
+<P><STRONG><a name="[165]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry9a.o(.ARM.Collect$$$$0000000B))
 
-<P><STRONG><a name="[167]"></a>__rt_lib_shutdown_fini</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry12b.o(.ARM.Collect$$$$0000000E))
+<P><STRONG><a name="[166]"></a>__rt_lib_shutdown_fini</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry12b.o(.ARM.Collect$$$$0000000E))
 
-<P><STRONG><a name="[168]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000F))
+<P><STRONG><a name="[167]"></a>__rt_final_cpp</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry10a.o(.ARM.Collect$$$$0000000F))
 
-<P><STRONG><a name="[169]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$00000011))
+<P><STRONG><a name="[168]"></a>__rt_final_exit</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry11a.o(.ARM.Collect$$$$00000011))
 
 <P><STRONG><a name="[25]"></a>Reset_Handler</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, startup_hc32f460.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> startup_hc32f460.o(RESET)
@@ -303,42 +303,42 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsr
 <LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_llsl
 </UL>
-<BR>[Called By]<UL><LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_processwrite
-<LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_processread
+<BR>[Called By]<UL><LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_processwrite
+<LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_processread
 </UL>
 
 <P><STRONG><a name="[f4]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFATWrite
-<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFATRead
-<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFAT_WriteBlock
-<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFAT_ReadBlock
-<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadFLASHFileBlock
+<BR><BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFATWrite
+<LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFATRead
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFAT_WriteBlock
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFAT_ReadBlock
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadWriteFLASHFileBlock
 </UL>
 
-<P><STRONG><a name="[16a]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+<P><STRONG><a name="[169]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
 
-<P><STRONG><a name="[16b]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
+<P><STRONG><a name="[16a]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
 
 <P><STRONG><a name="[cc]"></a>__aeabi_memset</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, memseta.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_memset$wrapper
 <LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 </UL>
 
-<P><STRONG><a name="[16c]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[16b]"></a>__aeabi_memset4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
-<P><STRONG><a name="[16d]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[16c]"></a>__aeabi_memset8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[cb]"></a>__aeabi_memclr</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, memseta.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFAT_ReadBlock
+<BR>[Called By]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFAT_ReadBlock
 </UL>
 
 <P><STRONG><a name="[d0]"></a>__aeabi_memclr4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_CLK_Init
 </UL>
 
-<P><STRONG><a name="[16e]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
+<P><STRONG><a name="[16d]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memseta.o(.text), UNUSED)
 
 <P><STRONG><a name="[cd]"></a>_memset$wrapper</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, memseta.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memset
@@ -348,13 +348,13 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
 
-<P><STRONG><a name="[16f]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
+<P><STRONG><a name="[16e]"></a>_ll_shift_l</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llshl.o(.text), UNUSED)
 
 <P><STRONG><a name="[c9]"></a>__aeabi_llsr</STRONG> (Thumb, 32 bytes, Stack size 0 bytes, llushr.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
 
-<P><STRONG><a name="[170]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
+<P><STRONG><a name="[16f]"></a>_ll_ushift_r</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, llushr.o(.text), UNUSED)
 
 <P><STRONG><a name="[c7]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
 <BR><BR>[Calls]<UL><LI><a href="#[ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
@@ -362,10 +362,10 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
 </UL>
 
-<P><STRONG><a name="[171]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+<P><STRONG><a name="[170]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
 
 <P><STRONG><a name="[c4]"></a>Ddl_AssertHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, hc32f460_utility.o(i.Ddl_AssertHandler))
-<BR><BR>[Called By]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enIrqRegistration
+<BR><BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enIrqRegistration
 <LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWC_Fcg1PeriphClockCmd
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_SetFunc
 <LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLK_UpllConfig
@@ -391,9 +391,9 @@ Global Symbols
 <LI><a href="#[c5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NMI_IrqHandler
 </UL>
 
-<P><STRONG><a name="[172]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl.o(.text), UNUSED)
+<P><STRONG><a name="[171]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl.o(.text), UNUSED)
 
-<P><STRONG><a name="[173]"></a>__decompress0</STRONG> (Thumb, 58 bytes, Stack size unknown bytes, __dczerorl.o(.text), UNUSED)
+<P><STRONG><a name="[172]"></a>__decompress0</STRONG> (Thumb, 58 bytes, Stack size unknown bytes, __dczerorl.o(.text), UNUSED)
 
 <P><STRONG><a name="[cf]"></a>BSP_CLK_Init</STRONG> (Thumb, 212 bytes, Stack size 48 bytes, ev_hc32f460_lqfp100_v2.o(i.BSP_CLK_Init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = BSP_CLK_Init &rArr; CLK_SetSysClkSource &rArr; SystemCoreClockUpdate
@@ -427,7 +427,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Ddl_AssertHandler
 </UL>
 <BR>[Called By]<UL><LI><a href="#[e3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLK_UpllCmd
-<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsbClkIni
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsbClkIni
 <LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_CLK_Init
 <LI><a href="#[d3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLK_XtalCmd
 <LI><a href="#[da]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLK_MpllCmd
@@ -472,7 +472,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Ddl_AssertHandler
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsbClkIni
+<BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsbClkIni
 </UL>
 
 <P><STRONG><a name="[d1]"></a>CLK_SysClkConfig</STRONG> (Thumb, 366 bytes, Stack size 32 bytes, hc32f460_clk.o(i.CLK_SysClkConfig))
@@ -489,7 +489,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLK_GetFlagStatus
 <LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Ddl_AssertHandler
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsbClkIni
+<BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsbClkIni
 </UL>
 
 <P><STRONG><a name="[e4]"></a>CLK_UpllConfig</STRONG> (Thumb, 380 bytes, Stack size 16 bytes, hc32f460_clk.o(i.CLK_UpllConfig))
@@ -497,7 +497,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Ddl_AssertHandler
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsbClkIni
+<BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsbClkIni
 </UL>
 
 <P><STRONG><a name="[d3]"></a>CLK_XtalCmd</STRONG> (Thumb, 230 bytes, Stack size 16 bytes, hc32f460_clk.o(i.CLK_XtalCmd))
@@ -544,14 +544,14 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Ddl_AssertHandler
 </UL>
-<BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFlashProgram
-<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFlashErase
+<BR>[Called By]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFlashProgram
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFlashErase
 </UL>
 
 <P><STRONG><a name="[d7]"></a>EFM_Lock</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, hc32f460_efm.o(i.EFM_Lock))
 <BR><BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_CLK_Init
-<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFlashProgram
-<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFlashErase
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFlashProgram
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFlashErase
 </UL>
 
 <P><STRONG><a name="[e7]"></a>EFM_SectorErase</STRONG> (Thumb, 164 bytes, Stack size 24 bytes, hc32f460_efm.o(i.EFM_SectorErase))
@@ -561,7 +561,7 @@ Global Symbols
 <LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EFM_ClearFlag
 <LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Ddl_AssertHandler
 </UL>
-<BR>[Called By]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFlashErase
+<BR>[Called By]<UL><LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFlashErase
 </UL>
 
 <P><STRONG><a name="[d6]"></a>EFM_SetLatency</STRONG> (Thumb, 94 bytes, Stack size 8 bytes, hc32f460_efm.o(i.EFM_SetLatency))
@@ -579,13 +579,13 @@ Global Symbols
 <LI><a href="#[e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EFM_ClearFlag
 <LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Ddl_AssertHandler
 </UL>
-<BR>[Called By]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFlashProgram
+<BR>[Called By]<UL><LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFlashProgram
 </UL>
 
 <P><STRONG><a name="[d5]"></a>EFM_Unlock</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, hc32f460_efm.o(i.EFM_Unlock))
 <BR><BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_CLK_Init
-<LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFlashProgram
-<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFlashErase
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFlashProgram
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFlashErase
 </UL>
 
 <P><STRONG><a name="[27]"></a>HardFault_Handler</STRONG> (Thumb, 8 bytes, Stack size 8 bytes, hc32f460_interrupts.o(i.HardFault_Handler))
@@ -1278,7 +1278,7 @@ Global Symbols
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_Unlock
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_Lock
 </UL>
-<BR>[Called By]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_bsp_init
+<BR>[Called By]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_bsp_init
 <LI><a href="#[de]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_GPIO_Init
 </UL>
 
@@ -1303,7 +1303,7 @@ Global Symbols
 <LI><a href="#[ec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_Unlock
 <LI><a href="#[ed]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_Lock
 </UL>
-<BR>[Called By]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_bsp_init
+<BR>[Called By]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_bsp_init
 </UL>
 
 <P><STRONG><a name="[ec]"></a>PORT_Unlock</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, hc32f460_gpio.o(i.PORT_Unlock))
@@ -1317,7 +1317,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Ddl_AssertHandler
 </UL>
-<BR>[Called By]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_bsp_init
+<BR>[Called By]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_bsp_init
 </UL>
 
 <P><STRONG><a name="[dc]"></a>PWC_HS2HP</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, hc32f460_pwc.o(i.PWC_HS2HP))
@@ -1333,11 +1333,11 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_hc32f460.o(RESET)
 </UL>
-<P><STRONG><a name="[f8]"></a>SRAM_CK_Disable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, hc32f460_sram.o(i.SRAM_CK_Disable))
+<P><STRONG><a name="[fa]"></a>SRAM_CK_Disable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, hc32f460_sram.o(i.SRAM_CK_Disable))
 <BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SRAM_Init
 </UL>
 
-<P><STRONG><a name="[f6]"></a>SRAM_CK_Enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, hc32f460_sram.o(i.SRAM_CK_Enable))
+<P><STRONG><a name="[f8]"></a>SRAM_CK_Enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, hc32f460_sram.o(i.SRAM_CK_Enable))
 <BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SRAM_Init
 </UL>
 
@@ -1345,19 +1345,19 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = SRAM_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Ddl_AssertHandler
-<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SRAM_WT_Enable
-<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SRAM_WT_Disable
-<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SRAM_CK_Enable
-<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SRAM_CK_Disable
+<LI><a href="#[f7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SRAM_WT_Enable
+<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SRAM_WT_Disable
+<LI><a href="#[f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SRAM_CK_Enable
+<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SRAM_CK_Disable
 </UL>
 <BR>[Called By]<UL><LI><a href="#[cf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BSP_CLK_Init
 </UL>
 
-<P><STRONG><a name="[f7]"></a>SRAM_WT_Disable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, hc32f460_sram.o(i.SRAM_WT_Disable))
+<P><STRONG><a name="[f9]"></a>SRAM_WT_Disable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, hc32f460_sram.o(i.SRAM_WT_Disable))
 <BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SRAM_Init
 </UL>
 
-<P><STRONG><a name="[f5]"></a>SRAM_WT_Enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, hc32f460_sram.o(i.SRAM_WT_Enable))
+<P><STRONG><a name="[f7]"></a>SRAM_WT_Enable</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, hc32f460_sram.o(i.SRAM_WT_Enable))
 <BR><BR>[Called By]<UL><LI><a href="#[d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SRAM_Init
 </UL>
 
@@ -1397,46 +1397,46 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_hc32f460.o(RESET)
 </UL>
-<P><STRONG><a name="[fc]"></a>VirtualFATRead</STRONG> (Thumb, 48 bytes, Stack size 24 bytes, virtualfat.o(i.VirtualFATRead))
-<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = VirtualFATRead &rArr; VirtualFAT_ReadBlock &rArr; UpdateFAT12ClusterChain &rArr; UpdateFAT12ClusterEntry
+<P><STRONG><a name="[fe]"></a>VirtualFATRead</STRONG> (Thumb, 48 bytes, Stack size 24 bytes, virtualfat.o(i.VirtualFATRead))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = VirtualFATRead &rArr; VirtualFAT_ReadBlock &rArr; ReadWriteFLASHFileBlock &rArr; VirtualFlashProgram &rArr; EFM_SingleProgram &rArr; EFM_ErasePgmCmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFAT_ReadBlock
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFAT_ReadBlock
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_read
 </UL>
 
-<P><STRONG><a name="[fe]"></a>VirtualFATWrite</STRONG> (Thumb, 48 bytes, Stack size 24 bytes, virtualfat.o(i.VirtualFATWrite))
-<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = VirtualFATWrite &rArr; VirtualFAT_WriteBlock &rArr; WriteFLASHFileBlock &rArr; VirtualFlashProgram &rArr; EFM_SingleProgram &rArr; EFM_ErasePgmCmd
+<P><STRONG><a name="[100]"></a>VirtualFATWrite</STRONG> (Thumb, 48 bytes, Stack size 24 bytes, virtualfat.o(i.VirtualFATWrite))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = VirtualFATWrite &rArr; VirtualFAT_WriteBlock &rArr; ReadWriteFLASHFileBlock &rArr; VirtualFlashProgram &rArr; EFM_SingleProgram &rArr; EFM_ErasePgmCmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFAT_WriteBlock
+<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFAT_WriteBlock
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_write
 </UL>
 
-<P><STRONG><a name="[fd]"></a>VirtualFAT_ReadBlock</STRONG> (Thumb, 128 bytes, Stack size 16 bytes, virtualfat.o(i.VirtualFAT_ReadBlock))
-<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = VirtualFAT_ReadBlock &rArr; UpdateFAT12ClusterChain &rArr; UpdateFAT12ClusterEntry
+<P><STRONG><a name="[ff]"></a>VirtualFAT_ReadBlock</STRONG> (Thumb, 130 bytes, Stack size 16 bytes, virtualfat.o(i.VirtualFAT_ReadBlock))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = VirtualFAT_ReadBlock &rArr; ReadWriteFLASHFileBlock &rArr; VirtualFlashProgram &rArr; EFM_SingleProgram &rArr; EFM_ErasePgmCmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 <LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateFAT12ClusterEntry
-<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateFAT12ClusterChain
-<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadFLASHFileBlock
+<LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateFAT12ClusterEntry
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateFAT12ClusterChain
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadWriteFLASHFileBlock
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFATRead
+<BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFATRead
 </UL>
 
-<P><STRONG><a name="[ff]"></a>VirtualFAT_WriteBlock</STRONG> (Thumb, 100 bytes, Stack size 16 bytes, virtualfat.o(i.VirtualFAT_WriteBlock))
-<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = VirtualFAT_WriteBlock &rArr; WriteFLASHFileBlock &rArr; VirtualFlashProgram &rArr; EFM_SingleProgram &rArr; EFM_ErasePgmCmd
+<P><STRONG><a name="[101]"></a>VirtualFAT_WriteBlock</STRONG> (Thumb, 102 bytes, Stack size 16 bytes, virtualfat.o(i.VirtualFAT_WriteBlock))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = VirtualFAT_WriteBlock &rArr; ReadWriteFLASHFileBlock &rArr; VirtualFlashProgram &rArr; EFM_SingleProgram &rArr; EFM_ErasePgmCmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
-<LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteFLASHFileBlock
+<LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadWriteFLASHFileBlock
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFATWrite
+<BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFATWrite
 </UL>
 
-<P><STRONG><a name="[101]"></a>VirtualFlashErase</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, virtualflash.o(i.VirtualFlashErase))
+<P><STRONG><a name="[f5]"></a>VirtualFlashErase</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, virtualflash.o(i.VirtualFlashErase))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = VirtualFlashErase &rArr; EFM_SectorErase &rArr; EFM_ErasePgmCmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EFM_Unlock
@@ -1444,10 +1444,10 @@ Global Symbols
 <LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EFM_Lock
 <LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EFM_FlashCmd
 </UL>
-<BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteFLASHFileBlock
+<BR>[Called By]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadWriteFLASHFileBlock
 </UL>
 
-<P><STRONG><a name="[102]"></a>VirtualFlashProgram</STRONG> (Thumb, 60 bytes, Stack size 24 bytes, virtualflash.o(i.VirtualFlashProgram))
+<P><STRONG><a name="[f6]"></a>VirtualFlashProgram</STRONG> (Thumb, 60 bytes, Stack size 24 bytes, virtualflash.o(i.VirtualFlashProgram))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = VirtualFlashProgram &rArr; EFM_SingleProgram &rArr; EFM_ErasePgmCmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EFM_Unlock
@@ -1455,21 +1455,21 @@ Global Symbols
 <LI><a href="#[d7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EFM_Lock
 <LI><a href="#[e6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EFM_FlashCmd
 </UL>
-<BR>[Called By]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteFLASHFileBlock
+<BR>[Called By]<UL><LI><a href="#[f3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadWriteFLASHFileBlock
 </UL>
 
-<P><STRONG><a name="[174]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+<P><STRONG><a name="[173]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
 
-<P><STRONG><a name="[175]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+<P><STRONG><a name="[174]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
 
-<P><STRONG><a name="[176]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+<P><STRONG><a name="[175]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
 
-<P><STRONG><a name="[103]"></a>enIrqRegistration</STRONG> (Thumb, 146 bytes, Stack size 16 bytes, hc32f460_interrupts.o(i.enIrqRegistration))
+<P><STRONG><a name="[102]"></a>enIrqRegistration</STRONG> (Thumb, 146 bytes, Stack size 16 bytes, hc32f460_interrupts.o(i.enIrqRegistration))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = enIrqRegistration
 </UL>
 <BR>[Calls]<UL><LI><a href="#[c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Ddl_AssertHandler
 </UL>
-<BR>[Called By]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_bsp_nvicconfig
+<BR>[Called By]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_bsp_nvicconfig
 </UL>
 
 <P><STRONG><a name="[eb]"></a>enIrqResign</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, hc32f460_interrupts.o(i.enIrqResign))
@@ -1478,60 +1478,60 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[ea]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;JumpToBootloader
 </UL>
 
-<P><STRONG><a name="[13b]"></a>hd_usb_addrset</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, usb_dev_driver.o(i.hd_usb_addrset))
+<P><STRONG><a name="[13a]"></a>hd_usb_addrset</STRONG> (Thumb, 32 bytes, Stack size 8 bytes, usb_dev_driver.o(i.hd_usb_addrset))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = hd_usb_addrset
 </UL>
-<BR>[Called By]<UL><LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setaddr
+<BR>[Called By]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setaddr
 </UL>
 
-<P><STRONG><a name="[104]"></a>hd_usb_bsp_init</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, usb_bsp.o(i.hd_usb_bsp_init))
+<P><STRONG><a name="[103]"></a>hd_usb_bsp_init</STRONG> (Thumb, 84 bytes, Stack size 16 bytes, usb_bsp.o(i.hd_usb_bsp_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = hd_usb_bsp_init &rArr; UsbClkIni &rArr; CLK_UpllCmd &rArr; CLK_GetFlagStatus
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWC_Fcg1PeriphClockCmd
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_SetFunc
-<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsbClkIni
+<LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsbClkIni
 <LI><a href="#[e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_Init
 </UL>
-<BR>[Called By]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_dev_init
+<BR>[Called By]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_dev_init
 </UL>
 
-<P><STRONG><a name="[105]"></a>hd_usb_bsp_nvicconfig</STRONG> (Thumb, 128 bytes, Stack size 16 bytes, usb_bsp.o(i.hd_usb_bsp_nvicconfig))
+<P><STRONG><a name="[104]"></a>hd_usb_bsp_nvicconfig</STRONG> (Thumb, 128 bytes, Stack size 16 bytes, usb_bsp.o(i.hd_usb_bsp_nvicconfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = hd_usb_bsp_nvicconfig &rArr; enIrqRegistration
 </UL>
-<BR>[Calls]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enIrqRegistration
+<BR>[Calls]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enIrqRegistration
 </UL>
-<BR>[Called By]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_dev_init
+<BR>[Called By]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_dev_init
 </UL>
 
-<P><STRONG><a name="[10a]"></a>hd_usb_clearepstall</STRONG> (Thumb, 78 bytes, Stack size 12 bytes, usb_core_driver.o(i.hd_usb_clearepstall))
+<P><STRONG><a name="[109]"></a>hd_usb_clearepstall</STRONG> (Thumb, 78 bytes, Stack size 12 bytes, usb_core_driver.o(i.hd_usb_clearepstall))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = hd_usb_clearepstall
 </UL>
-<BR>[Called By]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_clrstall
+<BR>[Called By]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_clrstall
 </UL>
 
-<P><STRONG><a name="[106]"></a>hd_usb_clrfeature</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, usb_dev_stdreq.o(i.hd_usb_clrfeature))
+<P><STRONG><a name="[105]"></a>hd_usb_clrfeature</STRONG> (Thumb, 66 bytes, Stack size 16 bytes, usb_dev_stdreq.o(i.hd_usb_clrfeature))
 <BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = hd_usb_clrfeature &rArr; hd_usb_ctrlstatustx &rArr; hd_usb_deveptx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
-<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlstatustx
+<BR>[Calls]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlstatustx
 </UL>
-<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarddevreq
+<BR>[Called By]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarddevreq
 </UL>
 
-<P><STRONG><a name="[109]"></a>hd_usb_clrstall</STRONG> (Thumb, 92 bytes, Stack size 24 bytes, usb_dev_driver.o(i.hd_usb_clrstall))
+<P><STRONG><a name="[108]"></a>hd_usb_clrstall</STRONG> (Thumb, 92 bytes, Stack size 24 bytes, usb_dev_driver.o(i.hd_usb_clrstall))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = hd_usb_clrstall &rArr; hd_usb_clearepstall
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_clearepstall
+<BR>[Calls]<UL><LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_clearepstall
 </UL>
-<BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standardepreq
+<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standardepreq
 </UL>
 
-<P><STRONG><a name="[10b]"></a>hd_usb_coresoftrst</STRONG> (Thumb, 122 bytes, Stack size 24 bytes, usb_core_driver.o(i.hd_usb_coresoftrst))
+<P><STRONG><a name="[10a]"></a>hd_usb_coresoftrst</STRONG> (Thumb, 122 bytes, Stack size 24 bytes, usb_core_driver.o(i.hd_usb_coresoftrst))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = hd_usb_coresoftrst &rArr; hd_usb_udelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_udelay
+<BR>[Calls]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_udelay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_initusbcore
+<BR>[Called By]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_initusbcore
 </UL>
 
 <P><STRONG><a name="[16]"></a>hd_usb_ctrlconn</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, usb_dev_core.o(i.hd_usb_ctrlconn))
@@ -1539,97 +1539,97 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usb_dev_core.o(.data)
 </UL>
-<P><STRONG><a name="[10d]"></a>hd_usb_ctrldatatx</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, usb_dev_ctrleptrans.o(i.hd_usb_ctrldatatx))
+<P><STRONG><a name="[10c]"></a>hd_usb_ctrldatatx</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, usb_dev_ctrleptrans.o(i.hd_usb_ctrldatatx))
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = hd_usb_ctrldatatx &rArr; hd_usb_deveptx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_deveptx
+<BR>[Calls]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_deveptx
 </UL>
 <BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usb_dev_msc_setup
-<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getstatus
-<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getintf
-<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getdesc
-<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getconfig
-<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standardepreq
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getstatus
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getintf
+<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getdesc
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getconfig
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standardepreq
 </UL>
 
-<P><STRONG><a name="[108]"></a>hd_usb_ctrlerr</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, usb_dev_stdreq.o(i.hd_usb_ctrlerr))
+<P><STRONG><a name="[107]"></a>hd_usb_ctrlerr</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, usb_dev_stdreq.o(i.hd_usb_ctrlerr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = hd_usb_ctrlerr &rArr; hd_usb_stalldevep &rArr; hd_usb_setepstall
 </UL>
-<BR>[Calls]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ep0outstart
-<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_stalldevep
+<BR>[Calls]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ep0outstart
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_stalldevep
 </UL>
 <BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usb_dev_msc_setup
-<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setconfig
-<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setaddr
-<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getstatus
-<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getdesc
-<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getconfig
-<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_clrfeature
-<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarditfreq
-<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standardepreq
-<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarddevreq
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setconfig
+<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setaddr
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getstatus
+<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getdesc
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getconfig
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_clrfeature
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarditfreq
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standardepreq
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarddevreq
 </UL>
 
-<P><STRONG><a name="[111]"></a>hd_usb_ctrlstatusrx</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, usb_dev_ctrleptrans.o(i.hd_usb_ctrlstatusrx))
+<P><STRONG><a name="[110]"></a>hd_usb_ctrlstatusrx</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, usb_dev_ctrleptrans.o(i.hd_usb_ctrlstatusrx))
 <BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = hd_usb_ctrlstatusrx &rArr; hd_usb_readytorx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_readytorx
+<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_readytorx
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_datain_process
 </UL>
 
-<P><STRONG><a name="[107]"></a>hd_usb_ctrlstatustx</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, usb_dev_ctrleptrans.o(i.hd_usb_ctrlstatustx))
+<P><STRONG><a name="[106]"></a>hd_usb_ctrlstatustx</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, usb_dev_ctrleptrans.o(i.hd_usb_ctrlstatustx))
 <BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = hd_usb_ctrlstatustx &rArr; hd_usb_deveptx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_deveptx
+<BR>[Calls]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_deveptx
 </UL>
-<BR>[Called By]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setfeature
-<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setconfig
-<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setaddr
-<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_clrfeature
-<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarditfreq
-<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standardepreq
+<BR>[Called By]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setfeature
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setconfig
+<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setaddr
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_clrfeature
+<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarditfreq
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standardepreq
 <LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_dataout_process
 </UL>
 
 <P><STRONG><a name="[1c]"></a>hd_usb_datain_process</STRONG> (Thumb, 202 bytes, Stack size 16 bytes, usb_dev_core.o(i.hd_usb_datain_process))
 <BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = hd_usb_datain_process &rArr; hd_usb_ctrlstatusrx &rArr; hd_usb_readytorx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_deveptx
-<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlstatusrx
+<BR>[Calls]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_deveptx
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlstatusrx
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usb_dev_core.o(.data)
 </UL>
 <P><STRONG><a name="[1b]"></a>hd_usb_dataout_process</STRONG> (Thumb, 148 bytes, Stack size 16 bytes, usb_dev_core.o(i.hd_usb_dataout_process))
 <BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = hd_usb_dataout_process &rArr; hd_usb_ctrlstatustx &rArr; hd_usb_deveptx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_readytorx
-<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlstatustx
+<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_readytorx
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlstatustx
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usb_dev_core.o(.data)
 </UL>
 <P><STRONG><a name="[5]"></a>hd_usb_dev_configstrdesc</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, usb_dev_desc.o(i.hd_usb_dev_configstrdesc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = hd_usb_dev_configstrdesc &rArr; hd_usb_getstring
 </UL>
-<BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getstring
+<BR>[Calls]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getstring
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usb_dev_desc.o(.data)
 </UL>
-<P><STRONG><a name="[13d]"></a>hd_usb_dev_ctrlconfig</STRONG> (Thumb, 56 bytes, Stack size 24 bytes, usb_dev_core.o(i.hd_usb_dev_ctrlconfig))
+<P><STRONG><a name="[13c]"></a>hd_usb_dev_ctrlconfig</STRONG> (Thumb, 56 bytes, Stack size 24 bytes, usb_dev_core.o(i.hd_usb_dev_ctrlconfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = hd_usb_dev_ctrlconfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setconfig
+<BR>[Called By]<UL><LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setconfig
 </UL>
 
 <P><STRONG><a name="[0]"></a>hd_usb_dev_desc</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, usb_dev_desc.o(i.hd_usb_dev_desc))
 <BR>[Address Reference Count : 1]<UL><LI> usb_dev_desc.o(.data)
 </UL>
-<P><STRONG><a name="[114]"></a>hd_usb_dev_init</STRONG> (Thumb, 58 bytes, Stack size 24 bytes, usb_dev_core.o(i.hd_usb_dev_init))
+<P><STRONG><a name="[113]"></a>hd_usb_dev_init</STRONG> (Thumb, 58 bytes, Stack size 24 bytes, usb_dev_core.o(i.hd_usb_dev_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = hd_usb_dev_init &rArr; hd_usb_bsp_init &rArr; UsbClkIni &rArr; CLK_UpllCmd &rArr; CLK_GetFlagStatus
 </UL>
-<BR>[Calls]<UL><LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_bsp_nvicconfig
-<LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_bsp_init
-<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_initdev
+<BR>[Calls]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_bsp_nvicconfig
+<LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_bsp_init
+<LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_initdev
 </UL>
 <BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -1637,7 +1637,7 @@ Global Symbols
 <P><STRONG><a name="[6]"></a>hd_usb_dev_intfstrdesc</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, usb_dev_desc.o(i.hd_usb_dev_intfstrdesc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = hd_usb_dev_intfstrdesc &rArr; hd_usb_getstring
 </UL>
-<BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getstring
+<BR>[Calls]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getstring
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usb_dev_desc.o(.data)
 </UL>
@@ -1647,14 +1647,14 @@ Global Symbols
 <P><STRONG><a name="[2]"></a>hd_usb_dev_manufacturerstr</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, usb_dev_desc.o(i.hd_usb_dev_manufacturerstr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = hd_usb_dev_manufacturerstr &rArr; hd_usb_getstring
 </UL>
-<BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getstring
+<BR>[Calls]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getstring
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usb_dev_desc.o(.data)
 </UL>
 <P><STRONG><a name="[3]"></a>hd_usb_dev_productdesc</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, usb_dev_desc.o(i.hd_usb_dev_productdesc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = hd_usb_dev_productdesc &rArr; hd_usb_getstring
 </UL>
-<BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getstring
+<BR>[Calls]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getstring
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usb_dev_desc.o(.data)
 </UL>
@@ -1666,14 +1666,14 @@ Global Symbols
 <P><STRONG><a name="[15]"></a>hd_usb_dev_rst</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, usb_dev_core.o(i.hd_usb_dev_rst))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = hd_usb_dev_rst &rArr; hd_usb_opendevep &rArr; hd_usb_epactive
 </UL>
-<BR>[Calls]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_opendevep
+<BR>[Calls]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_opendevep
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usb_dev_core.o(.data)
 </UL>
 <P><STRONG><a name="[4]"></a>hd_usb_dev_serialstr</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, usb_dev_desc.o(i.hd_usb_dev_serialstr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = hd_usb_dev_serialstr &rArr; hd_usb_getstring
 </UL>
-<BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getstring
+<BR>[Calls]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getstring
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usb_dev_desc.o(.data)
 </UL>
@@ -1682,158 +1682,158 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usb_dev_core.o(.data)
 </UL>
-<P><STRONG><a name="[11a]"></a>hd_usb_devepdis</STRONG> (Thumb, 618 bytes, Stack size 12 bytes, usb_core_driver.o(i.hd_usb_devepdis))
+<P><STRONG><a name="[119]"></a>hd_usb_devepdis</STRONG> (Thumb, 618 bytes, Stack size 12 bytes, usb_core_driver.o(i.hd_usb_devepdis))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = hd_usb_devepdis
 </UL>
-<BR>[Called By]<UL><LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_devmodeinit
+<BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_devmodeinit
 </UL>
 
-<P><STRONG><a name="[10e]"></a>hd_usb_deveptx</STRONG> (Thumb, 84 bytes, Stack size 32 bytes, usb_dev_driver.o(i.hd_usb_deveptx))
+<P><STRONG><a name="[10d]"></a>hd_usb_deveptx</STRONG> (Thumb, 84 bytes, Stack size 32 bytes, usb_dev_driver.o(i.hd_usb_deveptx))
 <BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = hd_usb_deveptx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_epntransbegin
-<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ep0transbegin
+<BR>[Calls]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_epntransbegin
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ep0transbegin
 </UL>
-<BR>[Called By]<UL><LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_processread
-<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_txdata
-<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_txcsw
-<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrldatatx
-<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlstatustx
+<BR>[Called By]<UL><LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_processread
+<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_txdata
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_txcsw
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrldatatx
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlstatustx
 <LI><a href="#[1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_datain_process
 </UL>
 
-<P><STRONG><a name="[11b]"></a>hd_usb_devinten</STRONG> (Thumb, 194 bytes, Stack size 12 bytes, usb_core_driver.o(i.hd_usb_devinten))
+<P><STRONG><a name="[11a]"></a>hd_usb_devinten</STRONG> (Thumb, 194 bytes, Stack size 12 bytes, usb_core_driver.o(i.hd_usb_devinten))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = hd_usb_devinten
 </UL>
-<BR>[Called By]<UL><LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_devmodeinit
+<BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_devmodeinit
 </UL>
 
-<P><STRONG><a name="[119]"></a>hd_usb_devmodeinit</STRONG> (Thumb, 278 bytes, Stack size 24 bytes, usb_core_driver.o(i.hd_usb_devmodeinit))
+<P><STRONG><a name="[118]"></a>hd_usb_devmodeinit</STRONG> (Thumb, 278 bytes, Stack size 24 bytes, usb_core_driver.o(i.hd_usb_devmodeinit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = hd_usb_devmodeinit &rArr; hd_usb_devinten
 </UL>
-<BR>[Calls]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_devinten
-<LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_devepdis
+<BR>[Calls]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_devinten
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_devepdis
 </UL>
-<BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_initdev
+<BR>[Called By]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_initdev
 </UL>
 
-<P><STRONG><a name="[11c]"></a>hd_usb_enumfinish_isr</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, usb_dev_int.o(i.hd_usb_enumfinish_isr))
+<P><STRONG><a name="[11b]"></a>hd_usb_enumfinish_isr</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, usb_dev_int.o(i.hd_usb_enumfinish_isr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = hd_usb_enumfinish_isr &rArr; hd_usb_ep0activate
 </UL>
-<BR>[Calls]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ep0activate
+<BR>[Calls]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ep0activate
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_isr_handler
 </UL>
 
-<P><STRONG><a name="[11d]"></a>hd_usb_ep0activate</STRONG> (Thumb, 186 bytes, Stack size 16 bytes, usb_core_driver.o(i.hd_usb_ep0activate))
+<P><STRONG><a name="[11c]"></a>hd_usb_ep0activate</STRONG> (Thumb, 186 bytes, Stack size 16 bytes, usb_core_driver.o(i.hd_usb_ep0activate))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = hd_usb_ep0activate
 </UL>
-<BR>[Called By]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_enumfinish_isr
+<BR>[Called By]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_enumfinish_isr
 </UL>
 
-<P><STRONG><a name="[110]"></a>hd_usb_ep0outstart</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, usb_dev_driver.o(i.hd_usb_ep0outstart))
+<P><STRONG><a name="[10f]"></a>hd_usb_ep0outstart</STRONG> (Thumb, 12 bytes, Stack size 8 bytes, usb_dev_driver.o(i.hd_usb_ep0outstart))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = hd_usb_ep0outstart &rArr; hd_usb_ep0revcfg
 </UL>
-<BR>[Calls]<UL><LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ep0revcfg
+<BR>[Calls]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ep0revcfg
 </UL>
-<BR>[Called By]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
+<BR>[Called By]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
 </UL>
 
-<P><STRONG><a name="[11e]"></a>hd_usb_ep0revcfg</STRONG> (Thumb, 110 bytes, Stack size 16 bytes, usb_core_driver.o(i.hd_usb_ep0revcfg))
+<P><STRONG><a name="[11d]"></a>hd_usb_ep0revcfg</STRONG> (Thumb, 110 bytes, Stack size 16 bytes, usb_core_driver.o(i.hd_usb_ep0revcfg))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = hd_usb_ep0revcfg
 </UL>
-<BR>[Called By]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_reset_isr
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_outep_isr
-<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_inep_isr
-<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ep0outstart
+<BR>[Called By]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_reset_isr
+<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_outep_isr
+<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_inep_isr
+<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ep0outstart
 </UL>
 
-<P><STRONG><a name="[117]"></a>hd_usb_ep0transbegin</STRONG> (Thumb, 348 bytes, Stack size 28 bytes, usb_core_driver.o(i.hd_usb_ep0transbegin))
+<P><STRONG><a name="[116]"></a>hd_usb_ep0transbegin</STRONG> (Thumb, 348 bytes, Stack size 28 bytes, usb_core_driver.o(i.hd_usb_ep0transbegin))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = hd_usb_ep0transbegin
 </UL>
-<BR>[Called By]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_readytorx
-<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_deveptx
+<BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_readytorx
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_deveptx
 </UL>
 
-<P><STRONG><a name="[137]"></a>hd_usb_epactive</STRONG> (Thumb, 324 bytes, Stack size 16 bytes, usb_core_driver.o(i.hd_usb_epactive))
+<P><STRONG><a name="[136]"></a>hd_usb_epactive</STRONG> (Thumb, 324 bytes, Stack size 16 bytes, usb_core_driver.o(i.hd_usb_epactive))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = hd_usb_epactive
 </UL>
-<BR>[Called By]<UL><LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_opendevep
+<BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_opendevep
 </UL>
 
-<P><STRONG><a name="[144]"></a>hd_usb_epdeactive</STRONG> (Thumb, 90 bytes, Stack size 16 bytes, usb_core_driver.o(i.hd_usb_epdeactive))
+<P><STRONG><a name="[143]"></a>hd_usb_epdeactive</STRONG> (Thumb, 90 bytes, Stack size 16 bytes, usb_core_driver.o(i.hd_usb_epdeactive))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = hd_usb_epdeactive
 </UL>
-<BR>[Called By]<UL><LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_shutdevep
+<BR>[Called By]<UL><LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_shutdevep
 </UL>
 
-<P><STRONG><a name="[118]"></a>hd_usb_epntransbegin</STRONG> (Thumb, 726 bytes, Stack size 28 bytes, usb_core_driver.o(i.hd_usb_epntransbegin))
+<P><STRONG><a name="[117]"></a>hd_usb_epntransbegin</STRONG> (Thumb, 726 bytes, Stack size 28 bytes, usb_core_driver.o(i.hd_usb_epntransbegin))
 <BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_wrpkt
+<BR>[Calls]<UL><LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_wrpkt
 </UL>
-<BR>[Called By]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_readytorx
-<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_deveptx
+<BR>[Called By]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_readytorx
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_deveptx
 </UL>
 
-<P><STRONG><a name="[120]"></a>hd_usb_flsdevep</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, usb_dev_driver.o(i.hd_usb_flsdevep))
+<P><STRONG><a name="[11f]"></a>hd_usb_flsdevep</STRONG> (Thumb, 36 bytes, Stack size 16 bytes, usb_dev_driver.o(i.hd_usb_flsdevep))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = hd_usb_flsdevep &rArr; hd_usb_txfifoflush &rArr; hd_usb_udelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_txfifoflush
-<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_rxfifoflush
+<BR>[Calls]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_txfifoflush
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_rxfifoflush
 </UL>
 <BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usb_dev_msc_setup
-<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_init
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_init
 </UL>
 
-<P><STRONG><a name="[123]"></a>hd_usb_getconfig</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, usb_dev_stdreq.o(i.hd_usb_getconfig))
+<P><STRONG><a name="[122]"></a>hd_usb_getconfig</STRONG> (Thumb, 72 bytes, Stack size 16 bytes, usb_dev_stdreq.o(i.hd_usb_getconfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = hd_usb_getconfig &rArr; hd_usb_ctrldatatx &rArr; hd_usb_deveptx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
-<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrldatatx
+<BR>[Calls]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrldatatx
 </UL>
-<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarddevreq
+<BR>[Called By]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarddevreq
 </UL>
 
-<P><STRONG><a name="[124]"></a>hd_usb_getdesc</STRONG> (Thumb, 258 bytes, Stack size 24 bytes, usb_dev_stdreq.o(i.hd_usb_getdesc))
+<P><STRONG><a name="[123]"></a>hd_usb_getdesc</STRONG> (Thumb, 258 bytes, Stack size 24 bytes, usb_dev_stdreq.o(i.hd_usb_getdesc))
 <BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = hd_usb_getdesc &rArr; hd_usb_ctrldatatx &rArr; hd_usb_deveptx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
-<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrldatatx
+<BR>[Calls]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrldatatx
 </UL>
-<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarddevreq
+<BR>[Called By]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarddevreq
 </UL>
 
-<P><STRONG><a name="[125]"></a>hd_usb_getintf</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, usb_dev_stdreq.o(i.hd_usb_getintf))
+<P><STRONG><a name="[124]"></a>hd_usb_getintf</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, usb_dev_stdreq.o(i.hd_usb_getintf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = hd_usb_getintf &rArr; hd_usb_ctrldatatx &rArr; hd_usb_deveptx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrldatatx
+<BR>[Calls]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrldatatx
 </UL>
-<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarditfreq
-</UL>
-
-<P><STRONG><a name="[127]"></a>hd_usb_getlength</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, usb_dev_stdreq.o(i.hd_usb_getlength))
-<BR><BR>[Called By]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getstring
+<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarditfreq
 </UL>
 
-<P><STRONG><a name="[14e]"></a>hd_usb_getrxcnt</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, usb_dev_ctrleptrans.o(i.hd_usb_getrxcnt))
-<BR><BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_decode_cbw
+<P><STRONG><a name="[126]"></a>hd_usb_getlength</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, usb_dev_stdreq.o(i.hd_usb_getlength))
+<BR><BR>[Called By]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getstring
 </UL>
 
-<P><STRONG><a name="[126]"></a>hd_usb_getstatus</STRONG> (Thumb, 68 bytes, Stack size 16 bytes, usb_dev_stdreq.o(i.hd_usb_getstatus))
+<P><STRONG><a name="[14d]"></a>hd_usb_getrxcnt</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, usb_dev_ctrleptrans.o(i.hd_usb_getrxcnt))
+<BR><BR>[Called By]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_decode_cbw
+</UL>
+
+<P><STRONG><a name="[125]"></a>hd_usb_getstatus</STRONG> (Thumb, 68 bytes, Stack size 16 bytes, usb_dev_stdreq.o(i.hd_usb_getstatus))
 <BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = hd_usb_getstatus &rArr; hd_usb_ctrldatatx &rArr; hd_usb_deveptx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
-<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrldatatx
+<BR>[Calls]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrldatatx
 </UL>
-<BR>[Called By]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarditfreq
-<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarddevreq
+<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarditfreq
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarddevreq
 </UL>
 
-<P><STRONG><a name="[113]"></a>hd_usb_getstring</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, usb_dev_stdreq.o(i.hd_usb_getstring))
+<P><STRONG><a name="[112]"></a>hd_usb_getstring</STRONG> (Thumb, 78 bytes, Stack size 16 bytes, usb_dev_stdreq.o(i.hd_usb_getstring))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = hd_usb_getstring
 </UL>
-<BR>[Calls]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getlength
+<BR>[Calls]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getlength
 </UL>
 <BR>[Called By]<UL><LI><a href="#[4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_dev_serialstr
 <LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_dev_productdesc
@@ -1842,37 +1842,37 @@ Global Symbols
 <LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_dev_configstrdesc
 </UL>
 
-<P><STRONG><a name="[128]"></a>hd_usb_inep_isr</STRONG> (Thumb, 234 bytes, Stack size 24 bytes, usb_dev_int.o(i.hd_usb_inep_isr))
+<P><STRONG><a name="[127]"></a>hd_usb_inep_isr</STRONG> (Thumb, 234 bytes, Stack size 24 bytes, usb_dev_int.o(i.hd_usb_inep_isr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = hd_usb_inep_isr &rArr; hd_usb_wrblanktxfifo &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ep0revcfg
-<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_wrblanktxfifo
-<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_rddevinep
+<BR>[Calls]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ep0revcfg
+<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_wrblanktxfifo
+<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_rddevinep
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_isr_handler
 </UL>
 
-<P><STRONG><a name="[115]"></a>hd_usb_initdev</STRONG> (Thumb, 192 bytes, Stack size 24 bytes, usb_dev_driver.o(i.hd_usb_initdev))
+<P><STRONG><a name="[114]"></a>hd_usb_initdev</STRONG> (Thumb, 192 bytes, Stack size 24 bytes, usb_dev_driver.o(i.hd_usb_initdev))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = hd_usb_initdev &rArr; hd_usb_initusbcore &rArr; hd_usb_coresoftrst &rArr; hd_usb_udelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setregaddr
-<LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_modeset
-<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_initusbcore
-<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_devmodeinit
+<BR>[Calls]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setregaddr
+<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_modeset
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_initusbcore
+<LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_devmodeinit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_dev_init
+<BR>[Called By]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_dev_init
 </UL>
 
-<P><STRONG><a name="[12c]"></a>hd_usb_initusbcore</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, usb_core_driver.o(i.hd_usb_initusbcore))
+<P><STRONG><a name="[12b]"></a>hd_usb_initusbcore</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, usb_core_driver.o(i.hd_usb_initusbcore))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = hd_usb_initusbcore &rArr; hd_usb_coresoftrst &rArr; hd_usb_udelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_mdelay
-<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_coresoftrst
+<BR>[Calls]<UL><LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_mdelay
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_coresoftrst
 </UL>
-<BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_initdev
+<BR>[Called By]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_initdev
 </UL>
 
-<P><STRONG><a name="[135]"></a>hd_usb_isoinincomplt_isr</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, usb_dev_int.o(i.hd_usb_isoinincomplt_isr))
+<P><STRONG><a name="[134]"></a>hd_usb_isoinincomplt_isr</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, usb_dev_int.o(i.hd_usb_isoinincomplt_isr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = hd_usb_isoinincomplt_isr
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_isr_handler
@@ -1883,7 +1883,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usb_dev_core.o(.data)
 </UL>
-<P><STRONG><a name="[136]"></a>hd_usb_isooutincomplt_isr</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, usb_dev_int.o(i.hd_usb_isooutincomplt_isr))
+<P><STRONG><a name="[135]"></a>hd_usb_isooutincomplt_isr</STRONG> (Thumb, 24 bytes, Stack size 16 bytes, usb_dev_int.o(i.hd_usb_isooutincomplt_isr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = hd_usb_isooutincomplt_isr
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_isr_handler
@@ -1897,180 +1897,180 @@ Global Symbols
 <P><STRONG><a name="[c3]"></a>hd_usb_isr_handler</STRONG> (Thumb, 202 bytes, Stack size 16 bytes, usb_dev_int.o(i.hd_usb_isr_handler))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = hd_usb_isr_handler &rArr; hd_usb_inep_isr &rArr; hd_usb_wrblanktxfifo &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_susp_isr
-<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_sof_isr
-<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_rxstsqlvl_isr
-<LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_resume_isr
-<LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_reset_isr
-<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_outep_isr
-<LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_isooutincomplt_isr
-<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_isoinincomplt_isr
-<LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_inep_isr
-<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_enumfinish_isr
+<BR>[Calls]<UL><LI><a href="#[130]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_susp_isr
+<LI><a href="#[131]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_sof_isr
+<LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_rxstsqlvl_isr
+<LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_resume_isr
+<LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_reset_isr
+<LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_outep_isr
+<LI><a href="#[135]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_isooutincomplt_isr
+<LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_isoinincomplt_isr
+<LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_inep_isr
+<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_enumfinish_isr
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_IRQ_Handler
 </UL>
 
-<P><STRONG><a name="[12e]"></a>hd_usb_mdelay</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, usb_bsp.o(i.hd_usb_mdelay))
+<P><STRONG><a name="[12d]"></a>hd_usb_mdelay</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, usb_bsp.o(i.hd_usb_mdelay))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = hd_usb_mdelay &rArr; hd_usb_udelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_udelay
+<BR>[Calls]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_udelay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_modeset
-<LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_initusbcore
+<BR>[Called By]<UL><LI><a href="#[12c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_modeset
+<LI><a href="#[12b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_initusbcore
 </UL>
 
-<P><STRONG><a name="[12d]"></a>hd_usb_modeset</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, usb_core_driver.o(i.hd_usb_modeset))
+<P><STRONG><a name="[12c]"></a>hd_usb_modeset</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, usb_core_driver.o(i.hd_usb_modeset))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = hd_usb_modeset &rArr; hd_usb_mdelay &rArr; hd_usb_udelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_mdelay
+<BR>[Calls]<UL><LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_mdelay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_initdev
+<BR>[Called By]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_initdev
 </UL>
 
-<P><STRONG><a name="[116]"></a>hd_usb_opendevep</STRONG> (Thumb, 116 bytes, Stack size 32 bytes, usb_dev_driver.o(i.hd_usb_opendevep))
+<P><STRONG><a name="[115]"></a>hd_usb_opendevep</STRONG> (Thumb, 116 bytes, Stack size 32 bytes, usb_dev_driver.o(i.hd_usb_opendevep))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = hd_usb_opendevep &rArr; hd_usb_epactive
 </UL>
-<BR>[Calls]<UL><LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_epactive
+<BR>[Calls]<UL><LI><a href="#[136]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_epactive
 </UL>
 <BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usb_dev_msc_setup
 <LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usb_dev_msc_init
 <LI><a href="#[15]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_dev_rst
 </UL>
 
-<P><STRONG><a name="[12f]"></a>hd_usb_outep_isr</STRONG> (Thumb, 334 bytes, Stack size 32 bytes, usb_dev_int.o(i.hd_usb_outep_isr))
+<P><STRONG><a name="[12e]"></a>hd_usb_outep_isr</STRONG> (Thumb, 334 bytes, Stack size 32 bytes, usb_dev_int.o(i.hd_usb_outep_isr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = hd_usb_outep_isr &rArr; hd_usb_ep0revcfg
 </UL>
-<BR>[Calls]<UL><LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ep0revcfg
-<LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getoepintbit
+<BR>[Calls]<UL><LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ep0revcfg
+<LI><a href="#[137]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getoepintbit
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_isr_handler
 </UL>
 
-<P><STRONG><a name="[13f]"></a>hd_usb_parsesetupreq</STRONG> (Thumb, 68 bytes, Stack size 0 bytes, usb_dev_stdreq.o(i.hd_usb_parsesetupreq))
+<P><STRONG><a name="[13e]"></a>hd_usb_parsesetupreq</STRONG> (Thumb, 68 bytes, Stack size 0 bytes, usb_dev_stdreq.o(i.hd_usb_parsesetupreq))
 <BR><BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setup_process
 </UL>
 
-<P><STRONG><a name="[129]"></a>hd_usb_rddevinep</STRONG> (Thumb, 40 bytes, Stack size 12 bytes, usb_dev_int.o(i.hd_usb_rddevinep))
+<P><STRONG><a name="[128]"></a>hd_usb_rddevinep</STRONG> (Thumb, 40 bytes, Stack size 12 bytes, usb_dev_int.o(i.hd_usb_rddevinep))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = hd_usb_rddevinep
 </UL>
-<BR>[Called By]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_inep_isr
+<BR>[Called By]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_inep_isr
 </UL>
 
-<P><STRONG><a name="[139]"></a>hd_usb_rdpkt</STRONG> (Thumb, 44 bytes, Stack size 20 bytes, usb_core_driver.o(i.hd_usb_rdpkt))
+<P><STRONG><a name="[138]"></a>hd_usb_rdpkt</STRONG> (Thumb, 44 bytes, Stack size 20 bytes, usb_core_driver.o(i.hd_usb_rdpkt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = hd_usb_rdpkt
 </UL>
-<BR>[Called By]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_rxstsqlvl_isr
+<BR>[Called By]<UL><LI><a href="#[132]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_rxstsqlvl_isr
 </UL>
 
-<P><STRONG><a name="[112]"></a>hd_usb_readytorx</STRONG> (Thumb, 88 bytes, Stack size 32 bytes, usb_dev_driver.o(i.hd_usb_readytorx))
+<P><STRONG><a name="[111]"></a>hd_usb_readytorx</STRONG> (Thumb, 88 bytes, Stack size 32 bytes, usb_dev_driver.o(i.hd_usb_readytorx))
 <BR><BR>[Stack]<UL><LI>Max Depth = 84<LI>Call Chain = hd_usb_readytorx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_epntransbegin
-<LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ep0transbegin
+<BR>[Calls]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_epntransbegin
+<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ep0transbegin
 </UL>
-<BR>[Called By]<UL><LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_write10
-<LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_processwrite
-<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_txcsw
-<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_rst
-<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_init
-<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_abort
-<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlstatusrx
+<BR>[Called By]<UL><LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_write10
+<LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_processwrite
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_txcsw
+<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_rst
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_init
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_abort
+<LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlstatusrx
 <LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_dataout_process
 </UL>
 
-<P><STRONG><a name="[134]"></a>hd_usb_reset_isr</STRONG> (Thumb, 262 bytes, Stack size 40 bytes, usb_dev_int.o(i.hd_usb_reset_isr))
+<P><STRONG><a name="[133]"></a>hd_usb_reset_isr</STRONG> (Thumb, 262 bytes, Stack size 40 bytes, usb_dev_int.o(i.hd_usb_reset_isr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = hd_usb_reset_isr &rArr; hd_usb_txfifoflush &rArr; hd_usb_udelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_txfifoflush
-<LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ep0revcfg
+<BR>[Calls]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_txfifoflush
+<LI><a href="#[11d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ep0revcfg
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_isr_handler
 </UL>
 
-<P><STRONG><a name="[130]"></a>hd_usb_resume_isr</STRONG> (Thumb, 98 bytes, Stack size 24 bytes, usb_dev_int.o(i.hd_usb_resume_isr))
+<P><STRONG><a name="[12f]"></a>hd_usb_resume_isr</STRONG> (Thumb, 98 bytes, Stack size 24 bytes, usb_dev_int.o(i.hd_usb_resume_isr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = hd_usb_resume_isr
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_isr_handler
 </UL>
 
-<P><STRONG><a name="[122]"></a>hd_usb_rxfifoflush</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, usb_core_driver.o(i.hd_usb_rxfifoflush))
+<P><STRONG><a name="[121]"></a>hd_usb_rxfifoflush</STRONG> (Thumb, 76 bytes, Stack size 16 bytes, usb_core_driver.o(i.hd_usb_rxfifoflush))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = hd_usb_rxfifoflush &rArr; hd_usb_udelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_udelay
+<BR>[Calls]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_udelay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_flsdevep
+<BR>[Called By]<UL><LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_flsdevep
 </UL>
 
-<P><STRONG><a name="[133]"></a>hd_usb_rxstsqlvl_isr</STRONG> (Thumb, 140 bytes, Stack size 32 bytes, usb_dev_int.o(i.hd_usb_rxstsqlvl_isr))
+<P><STRONG><a name="[132]"></a>hd_usb_rxstsqlvl_isr</STRONG> (Thumb, 140 bytes, Stack size 32 bytes, usb_dev_int.o(i.hd_usb_rxstsqlvl_isr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = hd_usb_rxstsqlvl_isr &rArr; hd_usb_rdpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_rdpkt
+<BR>[Calls]<UL><LI><a href="#[138]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_rdpkt
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_isr_handler
 </UL>
 
-<P><STRONG><a name="[13a]"></a>hd_usb_setaddr</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, usb_dev_stdreq.o(i.hd_usb_setaddr))
+<P><STRONG><a name="[139]"></a>hd_usb_setaddr</STRONG> (Thumb, 80 bytes, Stack size 16 bytes, usb_dev_stdreq.o(i.hd_usb_setaddr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = hd_usb_setaddr &rArr; hd_usb_ctrlstatustx &rArr; hd_usb_deveptx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
-<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_addrset
-<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlstatustx
+<BR>[Calls]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
+<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_addrset
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlstatustx
 </UL>
-<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarddevreq
+<BR>[Called By]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarddevreq
 </UL>
 
-<P><STRONG><a name="[13c]"></a>hd_usb_setconfig</STRONG> (Thumb, 208 bytes, Stack size 16 bytes, usb_dev_stdreq.o(i.hd_usb_setconfig))
+<P><STRONG><a name="[13b]"></a>hd_usb_setconfig</STRONG> (Thumb, 208 bytes, Stack size 16 bytes, usb_dev_stdreq.o(i.hd_usb_setconfig))
 <BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = hd_usb_setconfig &rArr; hd_usb_ctrlstatustx &rArr; hd_usb_deveptx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
-<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlstatustx
-<LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_dev_ctrlconfig
+<BR>[Calls]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlstatustx
+<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_dev_ctrlconfig
 </UL>
-<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarddevreq
+<BR>[Called By]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarddevreq
 </UL>
 
-<P><STRONG><a name="[145]"></a>hd_usb_setepstall</STRONG> (Thumb, 446 bytes, Stack size 12 bytes, usb_core_driver.o(i.hd_usb_setepstall))
+<P><STRONG><a name="[144]"></a>hd_usb_setepstall</STRONG> (Thumb, 446 bytes, Stack size 12 bytes, usb_core_driver.o(i.hd_usb_setepstall))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = hd_usb_setepstall
 </UL>
-<BR>[Called By]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_stalldevep
+<BR>[Called By]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_stalldevep
 </UL>
 
-<P><STRONG><a name="[13e]"></a>hd_usb_setfeature</STRONG> (Thumb, 90 bytes, Stack size 24 bytes, usb_dev_stdreq.o(i.hd_usb_setfeature))
+<P><STRONG><a name="[13d]"></a>hd_usb_setfeature</STRONG> (Thumb, 90 bytes, Stack size 24 bytes, usb_dev_stdreq.o(i.hd_usb_setfeature))
 <BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = hd_usb_setfeature &rArr; hd_usb_ctrlstatustx &rArr; hd_usb_deveptx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlstatustx
+<BR>[Calls]<UL><LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlstatustx
 </UL>
-<BR>[Called By]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarddevreq
+<BR>[Called By]<UL><LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarddevreq
 </UL>
 
-<P><STRONG><a name="[12b]"></a>hd_usb_setregaddr</STRONG> (Thumb, 108 bytes, Stack size 8 bytes, usb_core_driver.o(i.hd_usb_setregaddr))
+<P><STRONG><a name="[12a]"></a>hd_usb_setregaddr</STRONG> (Thumb, 108 bytes, Stack size 8 bytes, usb_core_driver.o(i.hd_usb_setregaddr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = hd_usb_setregaddr
 </UL>
-<BR>[Called By]<UL><LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_initdev
+<BR>[Called By]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_initdev
 </UL>
 
 <P><STRONG><a name="[1a]"></a>hd_usb_setup_process</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, usb_dev_core.o(i.hd_usb_setup_process))
 <BR><BR>[Stack]<UL><LI>Max Depth = 156<LI>Call Chain = hd_usb_setup_process &rArr; hd_usb_standarddevreq &rArr; hd_usb_getdesc &rArr; hd_usb_ctrldatatx &rArr; hd_usb_deveptx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarditfreq
-<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standardepreq
-<LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarddevreq
-<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_stalldevep
-<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_parsesetupreq
+<BR>[Calls]<UL><LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarditfreq
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standardepreq
+<LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standarddevreq
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_stalldevep
+<LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_parsesetupreq
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usb_dev_core.o(.data)
 </UL>
-<P><STRONG><a name="[143]"></a>hd_usb_shutdevep</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, usb_dev_driver.o(i.hd_usb_shutdevep))
+<P><STRONG><a name="[142]"></a>hd_usb_shutdevep</STRONG> (Thumb, 80 bytes, Stack size 24 bytes, usb_dev_driver.o(i.hd_usb_shutdevep))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = hd_usb_shutdevep &rArr; hd_usb_epdeactive
 </UL>
-<BR>[Calls]<UL><LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_epdeactive
+<BR>[Calls]<UL><LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_epdeactive
 </UL>
 <BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usb_dev_msc_setup
 <LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usb_dev_msc_deinit
 </UL>
 
-<P><STRONG><a name="[132]"></a>hd_usb_sof_isr</STRONG> (Thumb, 22 bytes, Stack size 16 bytes, usb_dev_int.o(i.hd_usb_sof_isr))
+<P><STRONG><a name="[131]"></a>hd_usb_sof_isr</STRONG> (Thumb, 22 bytes, Stack size 16 bytes, usb_dev_int.o(i.hd_usb_sof_isr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = hd_usb_sof_isr
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_isr_handler
@@ -2081,100 +2081,100 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usb_dev_core.o(.data)
 </UL>
-<P><STRONG><a name="[10f]"></a>hd_usb_stalldevep</STRONG> (Thumb, 92 bytes, Stack size 24 bytes, usb_dev_driver.o(i.hd_usb_stalldevep))
+<P><STRONG><a name="[10e]"></a>hd_usb_stalldevep</STRONG> (Thumb, 92 bytes, Stack size 24 bytes, usb_dev_driver.o(i.hd_usb_stalldevep))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = hd_usb_stalldevep &rArr; hd_usb_setepstall
 </UL>
-<BR>[Calls]<UL><LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setepstall
+<BR>[Calls]<UL><LI><a href="#[144]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setepstall
 </UL>
-<BR>[Called By]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_complete_clearfeature
-<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_abort
-<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
-<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standardepreq
+<BR>[Called By]<UL><LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_complete_clearfeature
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_abort
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
+<LI><a href="#[141]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_standardepreq
 <LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setup_process
 </UL>
 
-<P><STRONG><a name="[140]"></a>hd_usb_standarddevreq</STRONG> (Thumb, 138 bytes, Stack size 16 bytes, usb_dev_stdreq.o(i.hd_usb_standarddevreq))
+<P><STRONG><a name="[13f]"></a>hd_usb_standarddevreq</STRONG> (Thumb, 138 bytes, Stack size 16 bytes, usb_dev_stdreq.o(i.hd_usb_standarddevreq))
 <BR><BR>[Stack]<UL><LI>Max Depth = 140<LI>Call Chain = hd_usb_standarddevreq &rArr; hd_usb_getdesc &rArr; hd_usb_ctrldatatx &rArr; hd_usb_deveptx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[13e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setfeature
-<LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setconfig
-<LI><a href="#[13a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setaddr
-<LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getstatus
-<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getdesc
-<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getconfig
-<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
-<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_clrfeature
+<BR>[Calls]<UL><LI><a href="#[13d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setfeature
+<LI><a href="#[13b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setconfig
+<LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setaddr
+<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getstatus
+<LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getdesc
+<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getconfig
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
+<LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_clrfeature
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setup_process
 </UL>
 
-<P><STRONG><a name="[142]"></a>hd_usb_standardepreq</STRONG> (Thumb, 416 bytes, Stack size 16 bytes, usb_dev_stdreq.o(i.hd_usb_standardepreq))
+<P><STRONG><a name="[141]"></a>hd_usb_standardepreq</STRONG> (Thumb, 416 bytes, Stack size 16 bytes, usb_dev_stdreq.o(i.hd_usb_standardepreq))
 <BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = hd_usb_standardepreq &rArr; hd_usb_ctrldatatx &rArr; hd_usb_deveptx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
-<LI><a href="#[109]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_clrstall
-<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrldatatx
-<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_stalldevep
-<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlstatustx
+<BR>[Calls]<UL><LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
+<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_clrstall
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrldatatx
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_stalldevep
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlstatustx
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setup_process
 </UL>
 
-<P><STRONG><a name="[141]"></a>hd_usb_standarditfreq</STRONG> (Thumb, 118 bytes, Stack size 16 bytes, usb_dev_stdreq.o(i.hd_usb_standarditfreq))
+<P><STRONG><a name="[140]"></a>hd_usb_standarditfreq</STRONG> (Thumb, 118 bytes, Stack size 16 bytes, usb_dev_stdreq.o(i.hd_usb_standarditfreq))
 <BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = hd_usb_standarditfreq &rArr; hd_usb_getstatus &rArr; hd_usb_ctrldatatx &rArr; hd_usb_deveptx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getstatus
-<LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getintf
-<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
-<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlstatustx
+<BR>[Calls]<UL><LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getstatus
+<LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getintf
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
+<LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlstatustx
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_setup_process
 </UL>
 
-<P><STRONG><a name="[131]"></a>hd_usb_susp_isr</STRONG> (Thumb, 98 bytes, Stack size 24 bytes, usb_dev_int.o(i.hd_usb_susp_isr))
+<P><STRONG><a name="[130]"></a>hd_usb_susp_isr</STRONG> (Thumb, 98 bytes, Stack size 24 bytes, usb_dev_int.o(i.hd_usb_susp_isr))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = hd_usb_susp_isr
 </UL>
 <BR>[Called By]<UL><LI><a href="#[c3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_isr_handler
 </UL>
 
-<P><STRONG><a name="[121]"></a>hd_usb_txfifoflush</STRONG> (Thumb, 90 bytes, Stack size 24 bytes, usb_core_driver.o(i.hd_usb_txfifoflush))
+<P><STRONG><a name="[120]"></a>hd_usb_txfifoflush</STRONG> (Thumb, 90 bytes, Stack size 24 bytes, usb_core_driver.o(i.hd_usb_txfifoflush))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = hd_usb_txfifoflush &rArr; hd_usb_udelay
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_udelay
+<BR>[Calls]<UL><LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_udelay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[134]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_reset_isr
-<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_flsdevep
+<BR>[Called By]<UL><LI><a href="#[133]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_reset_isr
+<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_flsdevep
 </UL>
 
-<P><STRONG><a name="[10c]"></a>hd_usb_udelay</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, usb_bsp.o(i.hd_usb_udelay))
+<P><STRONG><a name="[10b]"></a>hd_usb_udelay</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, usb_bsp.o(i.hd_usb_udelay))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = hd_usb_udelay
 </UL>
-<BR>[Called By]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_mdelay
-<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_txfifoflush
-<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_rxfifoflush
-<LI><a href="#[10b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_coresoftrst
+<BR>[Called By]<UL><LI><a href="#[12d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_mdelay
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_txfifoflush
+<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_rxfifoflush
+<LI><a href="#[10a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_coresoftrst
 </UL>
 
-<P><STRONG><a name="[12a]"></a>hd_usb_wrblanktxfifo</STRONG> (Thumb, 142 bytes, Stack size 32 bytes, usb_dev_int.o(i.hd_usb_wrblanktxfifo))
+<P><STRONG><a name="[129]"></a>hd_usb_wrblanktxfifo</STRONG> (Thumb, 142 bytes, Stack size 32 bytes, usb_dev_int.o(i.hd_usb_wrblanktxfifo))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = hd_usb_wrblanktxfifo &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_wrpkt
-<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usb_rdineptxfspcavail
+<BR>[Calls]<UL><LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_wrpkt
+<LI><a href="#[145]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usb_rdineptxfspcavail
 </UL>
-<BR>[Called By]<UL><LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_inep_isr
+<BR>[Called By]<UL><LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_inep_isr
 </UL>
 
-<P><STRONG><a name="[11f]"></a>hd_usb_wrpkt</STRONG> (Thumb, 44 bytes, Stack size 24 bytes, usb_core_driver.o(i.hd_usb_wrpkt))
+<P><STRONG><a name="[11e]"></a>hd_usb_wrpkt</STRONG> (Thumb, 44 bytes, Stack size 24 bytes, usb_core_driver.o(i.hd_usb_wrpkt))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = hd_usb_wrpkt
 </UL>
-<BR>[Called By]<UL><LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_epntransbegin
-<LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_wrblanktxfifo
+<BR>[Called By]<UL><LI><a href="#[117]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_epntransbegin
+<LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_wrblanktxfifo
 </UL>
 
 <P><STRONG><a name="[bf]"></a>main</STRONG> (Thumb, 150 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = main &rArr; hd_usb_dev_init &rArr; hd_usb_bsp_init &rArr; UsbClkIni &rArr; CLK_UpllCmd &rArr; CLK_GetFlagStatus
 </UL>
-<BR>[Calls]<UL><LI><a href="#[114]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_dev_init
+<BR>[Calls]<UL><LI><a href="#[113]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_dev_init
 <LI><a href="#[ef]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_SetBits
 <LI><a href="#[ee]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PORT_GetBit
 <LI><a href="#[f2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Ddl_Delay1ms
@@ -2184,96 +2184,96 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
-<P><STRONG><a name="[147]"></a>msc_bot_abort</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, usb_dev_msc_bot.o(i.msc_bot_abort))
+<P><STRONG><a name="[146]"></a>msc_bot_abort</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, usb_dev_msc_bot.o(i.msc_bot_abort))
 <BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = msc_bot_abort &rArr; hd_usb_readytorx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_stalldevep
-<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_readytorx
+<BR>[Calls]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_stalldevep
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_readytorx
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_decode_cbw
+<BR>[Called By]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_decode_cbw
 </UL>
 
-<P><STRONG><a name="[148]"></a>msc_bot_complete_clearfeature</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, usb_dev_msc_bot.o(i.msc_bot_complete_clearfeature))
+<P><STRONG><a name="[147]"></a>msc_bot_complete_clearfeature</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, usb_dev_msc_bot.o(i.msc_bot_complete_clearfeature))
 <BR><BR>[Stack]<UL><LI>Max Depth = 116<LI>Call Chain = msc_bot_complete_clearfeature &rArr; msc_bot_txcsw &rArr; hd_usb_readytorx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_txcsw
-<LI><a href="#[10f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_stalldevep
+<BR>[Calls]<UL><LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_txcsw
+<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_stalldevep
 </UL>
 <BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usb_dev_msc_setup
 </UL>
 
-<P><STRONG><a name="[14a]"></a>msc_bot_datain</STRONG> (Thumb, 70 bytes, Stack size 16 bytes, usb_dev_msc_bot.o(i.msc_bot_datain))
+<P><STRONG><a name="[149]"></a>msc_bot_datain</STRONG> (Thumb, 70 bytes, Stack size 16 bytes, usb_dev_msc_bot.o(i.msc_bot_datain))
 <BR><BR>[Stack]<UL><LI>Max Depth = 188<LI>Call Chain = msc_bot_datain &rArr; scsi_cmdprocess &rArr; scsi_write10 &rArr; scsi_processwrite &rArr; msc_bot_txcsw &rArr; hd_usb_readytorx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
-<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_txcsw
+<BR>[Calls]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_txcsw
 </UL>
 <BR>[Called By]<UL><LI><a href="#[23]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usb_dev_msc_datain
 </UL>
 
-<P><STRONG><a name="[14c]"></a>msc_bot_dataout</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, usb_dev_msc_bot.o(i.msc_bot_dataout))
+<P><STRONG><a name="[14b]"></a>msc_bot_dataout</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, usb_dev_msc_bot.o(i.msc_bot_dataout))
 <BR><BR>[Stack]<UL><LI>Max Depth = 196<LI>Call Chain = msc_bot_dataout &rArr; msc_bot_decode_cbw &rArr; scsi_cmdprocess &rArr; scsi_write10 &rArr; scsi_processwrite &rArr; msc_bot_txcsw &rArr; hd_usb_readytorx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
-<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_txcsw
-<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_decode_cbw
+<BR>[Calls]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_txcsw
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_decode_cbw
 </UL>
 <BR>[Called By]<UL><LI><a href="#[24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usb_dev_msc_dataout
 </UL>
 
-<P><STRONG><a name="[14d]"></a>msc_bot_decode_cbw</STRONG> (Thumb, 166 bytes, Stack size 8 bytes, usb_dev_msc_bot.o(i.msc_bot_decode_cbw))
+<P><STRONG><a name="[14c]"></a>msc_bot_decode_cbw</STRONG> (Thumb, 166 bytes, Stack size 8 bytes, usb_dev_msc_bot.o(i.msc_bot_decode_cbw))
 <BR><BR>[Stack]<UL><LI>Max Depth = 180<LI>Call Chain = msc_bot_decode_cbw &rArr; scsi_cmdprocess &rArr; scsi_write10 &rArr; scsi_processwrite &rArr; msc_bot_txcsw &rArr; hd_usb_readytorx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_sensecode
-<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
-<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_txdata
-<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_txcsw
-<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_abort
-<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getrxcnt
+<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_sensecode
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
+<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_txdata
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_txcsw
+<LI><a href="#[146]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_abort
+<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_getrxcnt
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_dataout
+<BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_dataout
 </UL>
 
-<P><STRONG><a name="[161]"></a>msc_bot_deinit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, usb_dev_msc_bot.o(i.msc_bot_deinit))
+<P><STRONG><a name="[160]"></a>msc_bot_deinit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, usb_dev_msc_bot.o(i.msc_bot_deinit))
 <BR><BR>[Called By]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usb_dev_msc_deinit
 </UL>
 
-<P><STRONG><a name="[151]"></a>msc_bot_init</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, usb_dev_msc_bot.o(i.msc_bot_init))
+<P><STRONG><a name="[150]"></a>msc_bot_init</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, usb_dev_msc_bot.o(i.msc_bot_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = msc_bot_init &rArr; hd_usb_readytorx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_flsdevep
-<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_readytorx
+<BR>[Calls]<UL><LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_flsdevep
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_readytorx
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usb_dev_msc_init
 </UL>
 
-<P><STRONG><a name="[152]"></a>msc_bot_rst</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, usb_dev_msc_bot.o(i.msc_bot_rst))
+<P><STRONG><a name="[151]"></a>msc_bot_rst</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, usb_dev_msc_bot.o(i.msc_bot_rst))
 <BR><BR>[Stack]<UL><LI>Max Depth = 92<LI>Call Chain = msc_bot_rst &rArr; hd_usb_readytorx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_readytorx
+<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_readytorx
 </UL>
 <BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usb_dev_msc_setup
 </UL>
 
-<P><STRONG><a name="[149]"></a>msc_bot_txcsw</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, usb_dev_msc_bot.o(i.msc_bot_txcsw))
+<P><STRONG><a name="[148]"></a>msc_bot_txcsw</STRONG> (Thumb, 48 bytes, Stack size 16 bytes, usb_dev_msc_bot.o(i.msc_bot_txcsw))
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = msc_bot_txcsw &rArr; hd_usb_readytorx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_readytorx
-<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_deveptx
+<BR>[Calls]<UL><LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_readytorx
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_deveptx
 </UL>
-<BR>[Called By]<UL><LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_processwrite
-<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_decode_cbw
-<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_dataout
-<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_datain
-<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_complete_clearfeature
+<BR>[Called By]<UL><LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_processwrite
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_decode_cbw
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_dataout
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_datain
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_complete_clearfeature
 </UL>
 
-<P><STRONG><a name="[150]"></a>msc_bot_txdata</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, usb_dev_msc_bot.o(i.msc_bot_txdata))
+<P><STRONG><a name="[14f]"></a>msc_bot_txdata</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, usb_dev_msc_bot.o(i.msc_bot_txdata))
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = msc_bot_txdata &rArr; hd_usb_deveptx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_deveptx
+<BR>[Calls]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_deveptx
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_decode_cbw
+<BR>[Called By]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_decode_cbw
 </UL>
 
 <P><STRONG><a name="[8]"></a>msc_getcapacity</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, usb_dev_msc_msd.o(i.msc_getcapacity))
@@ -2292,184 +2292,184 @@ Global Symbols
 <BR>[Address Reference Count : 1]<UL><LI> usb_dev_msc_msd.o(.data)
 </UL>
 <P><STRONG><a name="[b]"></a>msc_read</STRONG> (Thumb, 42 bytes, Stack size 24 bytes, usb_dev_msc_msd.o(i.msc_read))
-<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = msc_read &rArr; VirtualFATRead &rArr; VirtualFAT_ReadBlock &rArr; UpdateFAT12ClusterChain &rArr; UpdateFAT12ClusterEntry
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = msc_read &rArr; VirtualFATRead &rArr; VirtualFAT_ReadBlock &rArr; ReadWriteFLASHFileBlock &rArr; VirtualFlashProgram &rArr; EFM_SingleProgram &rArr; EFM_ErasePgmCmd
 </UL>
-<BR>[Calls]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFATRead
+<BR>[Calls]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFATRead
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usb_dev_msc_msd.o(.data)
 </UL>
 <P><STRONG><a name="[c]"></a>msc_write</STRONG> (Thumb, 42 bytes, Stack size 24 bytes, usb_dev_msc_msd.o(i.msc_write))
-<BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = msc_write &rArr; VirtualFATWrite &rArr; VirtualFAT_WriteBlock &rArr; WriteFLASHFileBlock &rArr; VirtualFlashProgram &rArr; EFM_SingleProgram &rArr; EFM_ErasePgmCmd
+<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = msc_write &rArr; VirtualFATWrite &rArr; VirtualFAT_WriteBlock &rArr; ReadWriteFLASHFileBlock &rArr; VirtualFlashProgram &rArr; EFM_SingleProgram &rArr; EFM_ErasePgmCmd
 </UL>
-<BR>[Calls]<UL><LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFATWrite
+<BR>[Calls]<UL><LI><a href="#[100]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFATWrite
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usb_dev_msc_msd.o(.data)
 </UL>
-<P><STRONG><a name="[153]"></a>scsi_addressrangecheck</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, usb_dev_msc_scsi.o(i.scsi_addressrangecheck))
+<P><STRONG><a name="[152]"></a>scsi_addressrangecheck</STRONG> (Thumb, 32 bytes, Stack size 16 bytes, usb_dev_msc_scsi.o(i.scsi_addressrangecheck))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = scsi_addressrangecheck &rArr; scsi_sensecode
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_sensecode
+<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_sensecode
 </UL>
-<BR>[Called By]<UL><LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_write10
-<LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_verify10
-<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_read10
+<BR>[Called By]<UL><LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_write10
+<LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_verify10
+<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_read10
 </UL>
 
-<P><STRONG><a name="[14b]"></a>scsi_cmdprocess</STRONG> (Thumb, 226 bytes, Stack size 24 bytes, usb_dev_msc_scsi.o(i.scsi_cmdprocess))
+<P><STRONG><a name="[14a]"></a>scsi_cmdprocess</STRONG> (Thumb, 226 bytes, Stack size 24 bytes, usb_dev_msc_scsi.o(i.scsi_cmdprocess))
 <BR><BR>[Stack]<UL><LI>Max Depth = 172<LI>Call Chain = scsi_cmdprocess &rArr; scsi_write10 &rArr; scsi_processwrite &rArr; msc_bot_txcsw &rArr; hd_usb_readytorx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_write10
-<LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_verify10
-<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_testunitready
-<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_startstopuint
-<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_requestsense
-<LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_readformatcapacity
-<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_readcapacity10
-<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_read10
-<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_modesense6
-<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_modesense10
-<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_inquiry
-<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_sensecode
+<BR>[Calls]<UL><LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_write10
+<LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_verify10
+<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_testunitready
+<LI><a href="#[156]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_startstopuint
+<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_requestsense
+<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_readformatcapacity
+<LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_readcapacity10
+<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_read10
+<LI><a href="#[157]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_modesense6
+<LI><a href="#[158]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_modesense10
+<LI><a href="#[155]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_inquiry
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_sensecode
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_decode_cbw
-<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_dataout
-<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_datain
+<BR>[Called By]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_decode_cbw
+<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_dataout
+<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_datain
 </UL>
 
-<P><STRONG><a name="[156]"></a>scsi_inquiry</STRONG> (Thumb, 70 bytes, Stack size 12 bytes, usb_dev_msc_scsi.o(i.scsi_inquiry))
+<P><STRONG><a name="[155]"></a>scsi_inquiry</STRONG> (Thumb, 70 bytes, Stack size 12 bytes, usb_dev_msc_scsi.o(i.scsi_inquiry))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = scsi_inquiry
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
+<BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
 </UL>
 
-<P><STRONG><a name="[159]"></a>scsi_modesense10</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, usb_dev_msc_scsi.o(i.scsi_modesense10))
-<BR><BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
+<P><STRONG><a name="[158]"></a>scsi_modesense10</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, usb_dev_msc_scsi.o(i.scsi_modesense10))
+<BR><BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
 </UL>
 
-<P><STRONG><a name="[158]"></a>scsi_modesense6</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, usb_dev_msc_scsi.o(i.scsi_modesense6))
-<BR><BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
+<P><STRONG><a name="[157]"></a>scsi_modesense6</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, usb_dev_msc_scsi.o(i.scsi_modesense6))
+<BR><BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
 </UL>
 
-<P><STRONG><a name="[15f]"></a>scsi_processread</STRONG> (Thumb, 174 bytes, Stack size 24 bytes, usb_dev_msc_scsi.o(i.scsi_processread))
+<P><STRONG><a name="[15e]"></a>scsi_processread</STRONG> (Thumb, 174 bytes, Stack size 24 bytes, usb_dev_msc_scsi.o(i.scsi_processread))
 <BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = scsi_processread &rArr; hd_usb_deveptx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_sensecode
-<LI><a href="#[10e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_deveptx
+<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_sensecode
+<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_deveptx
 <LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
-<BR>[Called By]<UL><LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_read10
+<BR>[Called By]<UL><LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_read10
 </UL>
 
-<P><STRONG><a name="[160]"></a>scsi_processwrite</STRONG> (Thumb, 200 bytes, Stack size 24 bytes, usb_dev_msc_scsi.o(i.scsi_processwrite))
+<P><STRONG><a name="[15f]"></a>scsi_processwrite</STRONG> (Thumb, 200 bytes, Stack size 24 bytes, usb_dev_msc_scsi.o(i.scsi_processwrite))
 <BR><BR>[Stack]<UL><LI>Max Depth = 124<LI>Call Chain = scsi_processwrite &rArr; msc_bot_txcsw &rArr; hd_usb_readytorx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_sensecode
-<LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_txcsw
-<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_readytorx
+<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_sensecode
+<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_txcsw
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_readytorx
 <LI><a href="#[c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uldivmod
 </UL>
-<BR>[Called By]<UL><LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_write10
+<BR>[Called By]<UL><LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_write10
 </UL>
 
-<P><STRONG><a name="[15c]"></a>scsi_read10</STRONG> (Thumb, 256 bytes, Stack size 24 bytes, usb_dev_msc_scsi.o(i.scsi_read10))
+<P><STRONG><a name="[15b]"></a>scsi_read10</STRONG> (Thumb, 256 bytes, Stack size 24 bytes, usb_dev_msc_scsi.o(i.scsi_read10))
 <BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = scsi_read10 &rArr; scsi_processread &rArr; hd_usb_deveptx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_processread
-<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_addressrangecheck
-<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_sensecode
+<BR>[Calls]<UL><LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_processread
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_addressrangecheck
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_sensecode
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
+<BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
 </UL>
 
-<P><STRONG><a name="[15b]"></a>scsi_readcapacity10</STRONG> (Thumb, 114 bytes, Stack size 16 bytes, usb_dev_msc_scsi.o(i.scsi_readcapacity10))
+<P><STRONG><a name="[15a]"></a>scsi_readcapacity10</STRONG> (Thumb, 114 bytes, Stack size 16 bytes, usb_dev_msc_scsi.o(i.scsi_readcapacity10))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = scsi_readcapacity10 &rArr; scsi_sensecode
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_sensecode
+<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_sensecode
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
+<BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
 </UL>
 
-<P><STRONG><a name="[15a]"></a>scsi_readformatcapacity</STRONG> (Thumb, 122 bytes, Stack size 24 bytes, usb_dev_msc_scsi.o(i.scsi_readformatcapacity))
+<P><STRONG><a name="[159]"></a>scsi_readformatcapacity</STRONG> (Thumb, 122 bytes, Stack size 24 bytes, usb_dev_msc_scsi.o(i.scsi_readformatcapacity))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = scsi_readformatcapacity &rArr; scsi_sensecode
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_sensecode
+<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_sensecode
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
+<BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
 </UL>
 
-<P><STRONG><a name="[155]"></a>scsi_requestsense</STRONG> (Thumb, 134 bytes, Stack size 8 bytes, usb_dev_msc_scsi.o(i.scsi_requestsense))
+<P><STRONG><a name="[154]"></a>scsi_requestsense</STRONG> (Thumb, 134 bytes, Stack size 8 bytes, usb_dev_msc_scsi.o(i.scsi_requestsense))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = scsi_requestsense
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
+<BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
 </UL>
 
-<P><STRONG><a name="[14f]"></a>scsi_sensecode</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, usb_dev_msc_scsi.o(i.scsi_sensecode))
+<P><STRONG><a name="[14e]"></a>scsi_sensecode</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, usb_dev_msc_scsi.o(i.scsi_sensecode))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = scsi_sensecode
 </UL>
-<BR>[Called By]<UL><LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_write10
-<LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_verify10
-<LI><a href="#[154]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_testunitready
-<LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_readformatcapacity
-<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_readcapacity10
-<LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_read10
-<LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_processwrite
-<LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_processread
-<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_addressrangecheck
-<LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
-<LI><a href="#[14d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_decode_cbw
+<BR>[Called By]<UL><LI><a href="#[15c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_write10
+<LI><a href="#[15d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_verify10
+<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_testunitready
+<LI><a href="#[159]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_readformatcapacity
+<LI><a href="#[15a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_readcapacity10
+<LI><a href="#[15b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_read10
+<LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_processwrite
+<LI><a href="#[15e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_processread
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_addressrangecheck
+<LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
+<LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_decode_cbw
 </UL>
 
-<P><STRONG><a name="[157]"></a>scsi_startstopuint</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, usb_dev_msc_scsi.o(i.scsi_startstopuint))
-<BR><BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
+<P><STRONG><a name="[156]"></a>scsi_startstopuint</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, usb_dev_msc_scsi.o(i.scsi_startstopuint))
+<BR><BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
 </UL>
 
-<P><STRONG><a name="[154]"></a>scsi_testunitready</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, usb_dev_msc_scsi.o(i.scsi_testunitready))
+<P><STRONG><a name="[153]"></a>scsi_testunitready</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, usb_dev_msc_scsi.o(i.scsi_testunitready))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = scsi_testunitready &rArr; scsi_sensecode
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_sensecode
+<BR>[Calls]<UL><LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_sensecode
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
+<BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
 </UL>
 
-<P><STRONG><a name="[15e]"></a>scsi_verify10</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, usb_dev_msc_scsi.o(i.scsi_verify10))
+<P><STRONG><a name="[15d]"></a>scsi_verify10</STRONG> (Thumb, 64 bytes, Stack size 16 bytes, usb_dev_msc_scsi.o(i.scsi_verify10))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = scsi_verify10 &rArr; scsi_addressrangecheck &rArr; scsi_sensecode
 </UL>
-<BR>[Calls]<UL><LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_addressrangecheck
-<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_sensecode
+<BR>[Calls]<UL><LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_addressrangecheck
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_sensecode
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
+<BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
 </UL>
 
-<P><STRONG><a name="[15d]"></a>scsi_write10</STRONG> (Thumb, 310 bytes, Stack size 24 bytes, usb_dev_msc_scsi.o(i.scsi_write10))
+<P><STRONG><a name="[15c]"></a>scsi_write10</STRONG> (Thumb, 310 bytes, Stack size 24 bytes, usb_dev_msc_scsi.o(i.scsi_write10))
 <BR><BR>[Stack]<UL><LI>Max Depth = 148<LI>Call Chain = scsi_write10 &rArr; scsi_processwrite &rArr; msc_bot_txcsw &rArr; hd_usb_readytorx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_processwrite
-<LI><a href="#[153]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_addressrangecheck
-<LI><a href="#[14f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_sensecode
-<LI><a href="#[112]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_readytorx
+<BR>[Calls]<UL><LI><a href="#[15f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_processwrite
+<LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_addressrangecheck
+<LI><a href="#[14e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_sensecode
+<LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_readytorx
 </UL>
-<BR>[Called By]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
+<BR>[Called By]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;scsi_cmdprocess
 </UL>
 
 <P><STRONG><a name="[23]"></a>usb_dev_msc_datain</STRONG> (Thumb, 16 bytes, Stack size 16 bytes, usb_dev_msc_class.o(i.usb_dev_msc_datain))
 <BR><BR>[Stack]<UL><LI>Max Depth = 204<LI>Call Chain = usb_dev_msc_datain &rArr; msc_bot_datain &rArr; scsi_cmdprocess &rArr; scsi_write10 &rArr; scsi_processwrite &rArr; msc_bot_txcsw &rArr; hd_usb_readytorx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_datain
+<BR>[Calls]<UL><LI><a href="#[149]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_datain
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usb_dev_msc_class.o(.data)
 </UL>
 <P><STRONG><a name="[24]"></a>usb_dev_msc_dataout</STRONG> (Thumb, 16 bytes, Stack size 16 bytes, usb_dev_msc_class.o(i.usb_dev_msc_dataout))
 <BR><BR>[Stack]<UL><LI>Max Depth = 212<LI>Call Chain = usb_dev_msc_dataout &rArr; msc_bot_dataout &rArr; msc_bot_decode_cbw &rArr; scsi_cmdprocess &rArr; scsi_write10 &rArr; scsi_processwrite &rArr; msc_bot_txcsw &rArr; hd_usb_readytorx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[14c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_dataout
+<BR>[Calls]<UL><LI><a href="#[14b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_dataout
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usb_dev_msc_class.o(.data)
 </UL>
 <P><STRONG><a name="[20]"></a>usb_dev_msc_deinit</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, usb_dev_msc_class.o(i.usb_dev_msc_deinit))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = usb_dev_msc_deinit &rArr; hd_usb_shutdevep &rArr; hd_usb_epdeactive
 </UL>
-<BR>[Calls]<UL><LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_deinit
-<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_shutdevep
+<BR>[Calls]<UL><LI><a href="#[160]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_deinit
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_shutdevep
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usb_dev_msc_init
 </UL>
@@ -2482,21 +2482,21 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = usb_dev_msc_init &rArr; msc_bot_init &rArr; hd_usb_readytorx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
 <BR>[Calls]<UL><LI><a href="#[20]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usb_dev_msc_deinit
-<LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_init
-<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_opendevep
+<LI><a href="#[150]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_init
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_opendevep
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usb_dev_msc_class.o(.data)
 </UL>
 <P><STRONG><a name="[21]"></a>usb_dev_msc_setup</STRONG> (Thumb, 266 bytes, Stack size 16 bytes, usb_dev_msc_class.o(i.usb_dev_msc_setup))
 <BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = usb_dev_msc_setup &rArr; msc_bot_complete_clearfeature &rArr; msc_bot_txcsw &rArr; hd_usb_readytorx &rArr; hd_usb_epntransbegin &rArr; hd_usb_wrpkt
 </UL>
-<BR>[Calls]<UL><LI><a href="#[152]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_rst
-<LI><a href="#[148]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_complete_clearfeature
-<LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
-<LI><a href="#[143]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_shutdevep
-<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_flsdevep
-<LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrldatatx
-<LI><a href="#[116]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_opendevep
+<BR>[Calls]<UL><LI><a href="#[151]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_rst
+<LI><a href="#[147]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;msc_bot_complete_clearfeature
+<LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrlerr
+<LI><a href="#[142]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_shutdevep
+<LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_flsdevep
+<LI><a href="#[10c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_ctrldatatx
+<LI><a href="#[115]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_opendevep
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usb_dev_msc_class.o(.data)
 </UL>
@@ -2518,7 +2518,7 @@ Global Symbols
 <P><STRONG><a name="[e]"></a>usb_dev_user_init</STRONG> (Thumb, 98 bytes, Stack size 16 bytes, usb_dev_user.o(i.usb_dev_user_init))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = usb_dev_user_init
 </UL>
-<BR>[Calls]<UL><LI><a href="#[162]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key_Config
+<BR>[Calls]<UL><LI><a href="#[161]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Key_Config
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> usb_dev_user.o(.data)
 </UL>
@@ -2545,7 +2545,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[bf]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[fb]"></a>UsbClkIni</STRONG> (Thumb, 54 bytes, Stack size 24 bytes, usb_bsp.o(i.UsbClkIni))
+<P><STRONG><a name="[fd]"></a>UsbClkIni</STRONG> (Thumb, 54 bytes, Stack size 24 bytes, usb_bsp.o(i.UsbClkIni))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = UsbClkIni &rArr; CLK_UpllCmd &rArr; CLK_GetFlagStatus
 </UL>
 <BR>[Calls]<UL><LI><a href="#[e4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLK_UpllConfig
@@ -2553,53 +2553,47 @@ Local Symbols
 <LI><a href="#[e2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLK_SetUsbClkSource
 <LI><a href="#[db]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CLK_GetFlagStatus
 </UL>
-<BR>[Called By]<UL><LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_bsp_init
+<BR>[Called By]<UL><LI><a href="#[103]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_bsp_init
 </UL>
 
-<P><STRONG><a name="[162]"></a>Key_Config</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, usb_dev_user.o(i.Key_Config))
+<P><STRONG><a name="[161]"></a>Key_Config</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, usb_dev_user.o(i.Key_Config))
 <BR><BR>[Called By]<UL><LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;usb_dev_user_init
 </UL>
 
-<P><STRONG><a name="[138]"></a>hd_usb_getoepintbit</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, usb_dev_int.o(i.hd_usb_getoepintbit))
-<BR><BR>[Called By]<UL><LI><a href="#[12f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_outep_isr
+<P><STRONG><a name="[137]"></a>hd_usb_getoepintbit</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, usb_dev_int.o(i.hd_usb_getoepintbit))
+<BR><BR>[Called By]<UL><LI><a href="#[12e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_outep_isr
 </UL>
 
-<P><STRONG><a name="[146]"></a>usb_rdineptxfspcavail</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, usb_dev_int.o(i.usb_rdineptxfspcavail))
+<P><STRONG><a name="[145]"></a>usb_rdineptxfspcavail</STRONG> (Thumb, 18 bytes, Stack size 8 bytes, usb_dev_int.o(i.usb_rdineptxfspcavail))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = usb_rdineptxfspcavail
 </UL>
-<BR>[Called By]<UL><LI><a href="#[12a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_wrblanktxfifo
+<BR>[Called By]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;hd_usb_wrblanktxfifo
 </UL>
 
-<P><STRONG><a name="[f3]"></a>ReadFLASHFileBlock</STRONG> (Thumb, 70 bytes, Stack size 24 bytes, virtualfat.o(i.ReadFLASHFileBlock))
-<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = ReadFLASHFileBlock
+<P><STRONG><a name="[f3]"></a>ReadWriteFLASHFileBlock</STRONG> (Thumb, 102 bytes, Stack size 32 bytes, virtualfat.o(i.ReadWriteFLASHFileBlock))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = ReadWriteFLASHFileBlock &rArr; VirtualFlashProgram &rArr; EFM_SingleProgram &rArr; EFM_ErasePgmCmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy
+<LI><a href="#[f6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFlashProgram
+<LI><a href="#[f5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFlashErase
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFAT_ReadBlock
+<BR>[Called By]<UL><LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFAT_WriteBlock
+<LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFAT_ReadBlock
 </UL>
 
-<P><STRONG><a name="[f9]"></a>UpdateFAT12ClusterChain</STRONG> (Thumb, 52 bytes, Stack size 24 bytes, virtualfat.o(i.UpdateFAT12ClusterChain))
+<P><STRONG><a name="[fb]"></a>UpdateFAT12ClusterChain</STRONG> (Thumb, 52 bytes, Stack size 24 bytes, virtualfat.o(i.UpdateFAT12ClusterChain))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = UpdateFAT12ClusterChain &rArr; UpdateFAT12ClusterEntry
 </UL>
-<BR>[Calls]<UL><LI><a href="#[fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateFAT12ClusterEntry
+<BR>[Calls]<UL><LI><a href="#[fc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateFAT12ClusterEntry
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFAT_ReadBlock
+<BR>[Called By]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFAT_ReadBlock
 </UL>
 
-<P><STRONG><a name="[fa]"></a>UpdateFAT12ClusterEntry</STRONG> (Thumb, 68 bytes, Stack size 16 bytes, virtualfat.o(i.UpdateFAT12ClusterEntry))
+<P><STRONG><a name="[fc]"></a>UpdateFAT12ClusterEntry</STRONG> (Thumb, 68 bytes, Stack size 16 bytes, virtualfat.o(i.UpdateFAT12ClusterEntry))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = UpdateFAT12ClusterEntry
 </UL>
-<BR>[Called By]<UL><LI><a href="#[fd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFAT_ReadBlock
-<LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateFAT12ClusterChain
-</UL>
-
-<P><STRONG><a name="[100]"></a>WriteFLASHFileBlock</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, virtualfat.o(i.WriteFLASHFileBlock))
-<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = WriteFLASHFileBlock &rArr; VirtualFlashProgram &rArr; EFM_SingleProgram &rArr; EFM_ErasePgmCmd
-</UL>
-<BR>[Calls]<UL><LI><a href="#[102]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFlashProgram
-<LI><a href="#[101]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFlashErase
-</UL>
-<BR>[Called By]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFAT_WriteBlock
+<BR>[Called By]<UL><LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;VirtualFAT_ReadBlock
+<LI><a href="#[fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UpdateFAT12ClusterChain
 </UL>
 <P>
 <H3>
